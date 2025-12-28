@@ -78,7 +78,7 @@ const domainTeams = [
   {
     name: "Hospitality",
     roles: [
-      { title: "Head", members: [{ name: "A. Jagadeesh", image: "/images/team/a-jagadeesh.jpg" }, { name: "Prakruthi V" }] },
+      { title: "Head", members: [{ name: "A. Jagadeesh", image: "/images/team/a-jagadeesh.jpg" }, { name: "Prakruthi V", image: "/images/team/prakruthi-v.jpg" }] },
       { title: "Lead", members: [{ name: "Prithwi Ganesh Goud" }] },
       { title: "Co-Lead", members: [{ name: "Sri Nandini T" }, { name: "Vakul Kumar Bayya" }] },
     ]
