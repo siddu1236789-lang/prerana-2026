@@ -1,0 +1,4 @@
+1. Check for merge markers.
+2. If found, fix them.
+3. If not found, assume the previous fix worked and the user needs to refresh.
+4. Confirm the schedule implementation meets the requirements (4 domains, accessible).

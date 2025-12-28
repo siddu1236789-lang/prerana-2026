@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prerana Fest</title>
+</head>
+
+
+<body>
+  <div id="root"></div>
+  <script>
+    // In-page runtime error overlay to help capture client errors without devtools
+    (function () {
+      function showErrorOverlay(message, url, line, col, error) {
+        try {
+          var existing = document.getElementById('runtime-error-overlay');
+          if (existing) existing.remove();
+          var overlay = document.createElement('div');
+          overlay.id = 'runtime-error-overlay';
+          overlay.style.position = 'fixed';
+          overlay.style.zIndex = '99999';
+          overlay.style.left = '0';
+          overlay.style.top = '0';
+          overlay.style.right = '0';
+          overlay.style.padding = '16px';
+          overlay.style.background = 'rgba(220,20,60,0.95)';
+          overlay.style.color = '#fff';
+          overlay.style.fontFamily = 'monospace';
+          overlay.style.fontSize = '13px';
+          overlay.style.maxHeight = '50vh';
+          overlay.style.overflow = 'auto';
+          var content = '<strong>Runtime Error Captured</strong><br/>' +
+            '<div style="margin-top:8px">' + (message || 'Unknown error') + '</div>' +
+            '<div style="margin-top:8px;color:#ffeeee">' + (url ? url + ':' + line + ':' + col : '') + '</div>' +
+            '<pre style="margin-top:8px;color:#ffeeee;white-space:pre-wrap;">' + (error && error.stack ? error.stack : '') + '</pre>' +
+            '<div style="margin-top:8px;opacity:0.9">Open devtools for more details.</div>';
+          overlay.innerHTML = content;
+          document.body.appendChild(overlay);
+        } catch (e) {
+          // ignore
+        }
+      }
+
+      window.addEventListener('error', function (e) {
+        showErrorOverlay(e.message, e.filename, e.lineno, e.colno, e.error);
+      });
+
+      window.addEventListener('unhandledrejection', function (e) {
+        var reason = e.reason || {};
+        showErrorOverlay(reason.message || String(reason), reason.fileName || '', reason.lineNumber || '', reason.columnNumber || '', reason);
+      });
+    })();
+  </script>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
+

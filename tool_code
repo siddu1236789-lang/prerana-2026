@@ -1,0 +1,13 @@
+await call_tool({
+    "tool_name": "updateFileTool",
+    "parameters": {
+        "file_path": "src/components/landing/Hero.tsx",
+        "modifications": [
+            {
+                "type": "replace",
+                "old_code": "<span>Jan 22 - Jan 23, 2026</span>",
+                "new_code": "<span>Jan 22 - Jan 23</span>"
+            }
+        ]
+    }
+})

@@ -1,0 +1,13 @@
+--- a/src/pages/Team.tsx
++++ b/src/pages/Team.tsx
+@@ -5,7 +5,7 @@
+ import { motion } from "framer-motion";
+ 
+ // Data Definitions
+-const leadership = [
+-  { name: "M. Thousheer", role: "President", image: undefined },
++const leadership = [
++  { name: "M. Thousheer", role: "President", image: "https://harmless-tapir-303.convex.cloud/api/storage/9be34913-1ea7-4dec-b638-e8cd441195ae" },
+   { name: "Honalu K.G", role: "Vice President", image: undefined },
+   { name: "L. Mokshagna Reddy", role: "Vice President", image: undefined },
+ ];
