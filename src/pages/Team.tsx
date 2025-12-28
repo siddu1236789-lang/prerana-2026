@@ -72,7 +72,7 @@ const domainTeams = [
     roles: [
       { title: "Head", members: [{ name: "K. Sriniwas", image: "/images/team/k-sriniwas.jpg" }] },
       { title: "Lead", members: [{ name: "Sumanth Reddy S", image: "/images/team/sumanth-reddy-s.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "Srishti Sucklecha" }] },
+      { title: "Co-Lead", members: [{ name: "Srishti Sucklecha", image: "/images/team/srishti-sucklecha.jpg" }] },
     ]
   },
   {
@@ -80,7 +80,7 @@ const domainTeams = [
     roles: [
       { title: "Head", members: [{ name: "A. Jagadeesh", image: "/images/team/a-jagadeesh.jpg" }, { name: "Prakruthi V", image: "/images/team/prakruthi-v.jpg" }] },
       { title: "Lead", members: [{ name: "Prithwi Ganesh Goud" }] },
-      { title: "Co-Lead", members: [{ name: "Sri Nandini T" }, { name: "Vakul Kumar Bayya" }] },
+      { title: "Co-Lead", members: [{ name: "Sri Nandini T", image: "/images/team/sri-nandini-t.jpg" }, { name: "Vakul Kumar Bayya", image: "/images/team/vakul-kumar-bayya.jpg" }] },
     ]
   },
   {
@@ -88,7 +88,7 @@ const domainTeams = [
     roles: [
       { title: "Head", members: [{ name: "Sophiya Sharma", image: "/images/team/sophiya-sharma.jpg" }] },
       { title: "Lead", members: [{ name: "Hrishita Rauniyar", image: "/images/team/hrishita-rauniyar.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "Unnati Chari" }] },
+      { title: "Co-Lead", members: [{ name: "Unnati Chari", image: "/images/team/unnati-chari.jpg" }] },
     ]
   },
 ];
