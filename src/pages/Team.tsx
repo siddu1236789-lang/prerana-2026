@@ -63,7 +63,7 @@ const domainTeams = [
     name: "Operations",
     roles: [
       { title: "Head", members: [{ name: "Singareddy Ruthish Reddy", image: "/images/team/singareddy-ruthish-reddy.jpg" }] },
-      { title: "Lead", members: [{ name: "P. Joel Michael Son" }] },
+      { title: "Lead", members: [{ name: "P. Joel Michael Son", image: "/images/team/p-joel-michael-son.jpg" }] },
       { title: "Co-Lead", members: [{ name: "Allata Harshita" }] },
     ]
   },
@@ -71,7 +71,7 @@ const domainTeams = [
     name: "Sponsorship",
     roles: [
       { title: "Head", members: [{ name: "K. Sriniwas", image: "/images/team/k-sriniwas.jpg" }] },
-      { title: "Lead", members: [{ name: "Sumanth Reddy S" }] },
+      { title: "Lead", members: [{ name: "Sumanth Reddy S", image: "/images/team/sumanth-reddy-s.jpg" }] },
       { title: "Co-Lead", members: [{ name: "Srishti Sucklecha" }] },
     ]
   },
@@ -87,7 +87,7 @@ const domainTeams = [
     name: "Legal & Documentation",
     roles: [
       { title: "Head", members: [{ name: "Sophiya Sharma", image: "/images/team/sophiya-sharma.jpg" }] },
-      { title: "Lead", members: [{ name: "Hrishita Rauniyar" }] },
+      { title: "Lead", members: [{ name: "Hrishita Rauniyar", image: "/images/team/hrishita-rauniyar.jpg" }] },
       { title: "Co-Lead", members: [{ name: "Unnati Chari" }] },
     ]
   },
