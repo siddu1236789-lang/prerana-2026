@@ -56,7 +56,7 @@ const domainTeams = [
     roles: [
       { title: "Head", members: [{ name: "Apurva Mishra", image: "/images/team/apurva-mishra.jpg" }] },
       { title: "Lead", members: [{ name: "Manoj Kumar" }] },
-      { title: "Co-Lead", members: [{ name: "J. Riteesh Reddy" }] },
+      { title: "Co-Lead", members: [{ name: "J. Riteesh Reddy", image: "/images/team/j-riteesh-reddy.jpg" }] },
     ]
   },
   {
@@ -64,7 +64,7 @@ const domainTeams = [
     roles: [
       { title: "Head", members: [{ name: "Singareddy Ruthish Reddy", image: "/images/team/singareddy-ruthish-reddy.jpg" }] },
       { title: "Lead", members: [{ name: "P. Joel Michael Son", image: "/images/team/p-joel-michael-son.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "Allata Harshita" }] },
+      { title: "Co-Lead", members: [{ name: "Allata Harshita", image: "/images/team/allata-harshita.jpg" }] },
     ]
   },
   {
