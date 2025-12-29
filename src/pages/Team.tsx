@@ -115,6 +115,20 @@ function getInitials(name: string) {
 }
 
 export default function Team() {
+  // Order domains with priority: Technology, Security, Hospitality, then the rest
+  const getOrderedTeams = () => {
+    const primary = ["Technology", "Security", "Hospitality"];
+    const ordered: typeof domainTeams = [];
+    primary.forEach((name) => {
+      const found = domainTeams.find((t) => t.name === name);
+      if (found) ordered.push(found);
+    });
+    domainTeams.forEach((t) => {
+      if (!primary.includes(t.name)) ordered.push(t);
+    });
+    return ordered;
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/30 flex flex-col">
       <Navbar />
@@ -137,7 +151,7 @@ export default function Team() {
           {/* Director (Reema) then Manager (Asha) then Advisory Committee */}
           <section className="space-y-8">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl font-bold text-secondary">Advisory Leads</h2>
+              <h2 className="text-3xl font-bold text-secondary">Advisory Committee</h2>
               <div className="w-24 h-1 bg-secondary/50 mx-auto rounded-full" />
             </div>
 
@@ -191,11 +205,13 @@ export default function Team() {
               ))}
             </div>
 
+            
+
             {/* Advisory Committee Placeholder + Members */}
             <div className="max-w-7xl mx-auto px-4">
               <div className="text-center mb-6 space-y-2">
-                <h3 className="text-2xl font-bold">Advisory Committee</h3>
-                <p className="text-muted-foreground">Student Life Team</p>
+                <h3 className="text-2xl font-bold"></h3>
+                <p className="text-muted-foreground"></p>
               </div>
 
               <div className="flex flex-col md:flex-row items-start gap-8">
@@ -224,8 +240,48 @@ export default function Team() {
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+              </div>
+
+              {/* Leadership Section (moved below Advisory members) */}
+              <section className="space-y-8">
+                <div className="text-center space-y-4">
+                  <h2 className="text-3xl font-bold text-secondary">Leadership</h2>
+                  <div className="w-24 h-1 bg-secondary/50 mx-auto rounded-full" />
+                </div>
+
+                <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+                  {leadership.map((person, idx) => (
+                    <motion.div
+                      key={`lead-${idx}`}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: idx * 0.04 }}
+                      className="h-full"
+                    >
+                      <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 h-full flex flex-col justify-center items-center py-10 px-6">
+                        <CardHeader className="text-center p-0 space-y-4 w-full flex flex-col items-center">
+                          <Avatar className="w-32 h-32 border-4 border-primary/10 shadow-xl shadow-primary/5">
+                            {person.image ? (
+                              <AvatarImage src={person.image} alt={person.name} className="object-cover object-top" />
+                            ) : (
+                              <AvatarFallback className="bg-primary/5 text-primary text-3xl font-bold">{getInitials(person.name)}</AvatarFallback>
+                            )}
+                          </Avatar>
+                          <div className="space-y-2">
+                            <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight">
+                              {person.name}
+                            </CardTitle>
+                            <p className="text-lg md:text-xl text-primary font-medium tracking-wide uppercase">
+                              {person.role}
+                            </p>
+                          </div>
+                        </CardHeader>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
+              </section>
+            </section>
 
           {/* Domain Teams Section */}
           <section className="space-y-16">
@@ -240,7 +296,7 @@ export default function Team() {
                 <h3 className="text-2xl font-bold text-primary">Heads</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4">
-                {domainTeams.map((team) => {
+                {getOrderedTeams().map((team) => {
                   const heads = team.roles.find(r => r.title === "Head")?.members || [];
                   return heads.map((member, mIndex) => (
                     <motion.div
@@ -285,7 +341,7 @@ export default function Team() {
                 <h3 className="text-2xl font-bold text-primary">Leads</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4">
-                {domainTeams.map((team) => {
+                {getOrderedTeams().map((team) => {
                   const leads = team.roles.find(r => r.title === "Lead")?.members || [];
                   return leads.map((member, mIndex) => (
                     <motion.div
@@ -330,7 +386,7 @@ export default function Team() {
                 <h3 className="text-2xl font-bold text-primary">Co-Leads</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4">
-                {domainTeams.map((team) => {
+                {getOrderedTeams().map((team) => {
                   const coLeads = team.roles.find(r => r.title === "Co-Lead")?.members || [];
                   return coLeads.map((member, mIndex) => (
                     <motion.div

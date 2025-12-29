@@ -30,6 +30,14 @@ export default function Contact() {
               <h2 className="text-2xl font-bold mb-6 text-primary">Get in Touch</h2>
               
               <div className="space-y-6">
+                <div className="mt-0 mb-4 text-center">
+                  <img 
+                    src="https://harmless-tapir-303.convex.cloud/api/storage/492704e6-6a67-40db-b208-fb95bae91c34" 
+                    alt="Contact Support" 
+                    className="w-full max-w-[200px] mx-auto object-contain"
+                  />
+                </div>
+
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                     <Mail className="w-5 h-5 text-primary" />
@@ -37,7 +45,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold mb-1">Email Us</h3>
                     <p className="text-muted-foreground">preranablr@gitam.in</p>
-                    <p className="text-muted-foreground text-sm mt-1">For general inquiries and sponsorship</p>
+                    <p className="text-muted-foreground text-sm mt-1">(For General Enquiry and Sponsorship)</p>
                   </div>
                 </div>
 

@@ -4,8 +4,8 @@
   "description": "vly.ai application",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "background_color": "#F4E4C9",
+  "theme_color": "#007367",
   "icons": [
     {
       "src": "/logo.png",

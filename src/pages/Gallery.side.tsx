@@ -229,7 +229,7 @@ export default function GallerySide() {
         {/* Section 6: Closing CTA */}
         <section className="container mx-auto px-4 text-center">
           <div className="bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 p-12 rounded-3xl border border-white/10 relative overflow-hidden">
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
+            <div className="absolute inset-0 bg-gridlines" />
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Be in the Next Gallery?</h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

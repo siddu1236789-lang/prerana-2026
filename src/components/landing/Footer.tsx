@@ -13,7 +13,7 @@ export default function Footer() {
               <img src="https://harmless-tapir-303.convex.cloud/api/storage/4a061a6e-11ab-491e-b5a2-78a2aa928f5d" alt="PRERANA 2026" className="h-12 w-auto" />
             </div>
             <p className="text-muted-foreground text-sm">
-              The annual Techno-Cultural and Wellness fest of GITAM University, Bengaluru.
+              The Annual Techno-Cultural and Wellness Fest of GITAM University, Bengaluru.
             </p>
             <img 
               src="https://harmless-tapir-303.convex.cloud/api/storage/920deb77-5b83-473c-846b-cfaa277979fe" 
@@ -99,10 +99,17 @@ export default function Footer() {
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>&copy; 2026 Prerana Fest. All rights reserved.</p>
-          <p className="text-center">Developed by team Technology</p>
+          <p className="text-center">Developed by Team Technology</p>
           <div className="flex items-center gap-2">
              <span>Powered by</span>
-             <span className="font-bold text-primary">GITAM University,Bengaluru</span>
+             <a
+               href="https://www.gitam.edu/"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="font-bold text-primary hover:underline"
+             >
+               GITAM University, Bengaluru
+             </a>
           </div>
         </div>
       </div>
