@@ -99,7 +99,7 @@ export default function Footer() {
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>&copy; 2026 Prerana Fest. All rights reserved.</p>
-          <p className="text-center">Created by Prerana TECH Team</p>
+          <p className="text-center">Developed by team Technology</p>
           <div className="flex items-center gap-2">
              <span>Powered by</span>
              <span className="font-bold text-primary">GITAM University,Bengaluru</span>
