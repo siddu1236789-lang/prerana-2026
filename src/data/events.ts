@@ -716,7 +716,7 @@ export const events: Event[] = [
     location: "Auditorium",
     teamSize: "1",
     eligibility: "Open to all",
-    registrationFee: "₹249",
+    registrationFee: "₹449",
     prizes: ["See individual events"],
     guidelines: [
       "Participants must follow the rules and regulations of each individual event included in the combo.",
@@ -741,7 +741,7 @@ export const events: Event[] = [
     location: "Multiple Venues",
     teamSize: "Varies",
     eligibility: "Open to all",
-    registrationFee: "₹999",
+    registrationFee: "₹1999",
     prizes: ["See individual events"],
     guidelines: [
       "Participants must follow the rules and regulations of each individual event included in the combo.",
