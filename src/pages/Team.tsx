@@ -32,15 +32,15 @@ const domainTeams = [
     roles: [
       { title: "Head", members: [{ name: "Venkata Vishnu Vardhan Raju", image: "https://harmless-tapir-303.convex.cloud/api/storage/b0b811e7-fc09-42c7-ad63-689fe542a0c8" }] },
       { title: "Lead", members: [{ name: "M. Dhanunjay Reddy", image: "https://harmless-tapir-303.convex.cloud/api/storage/c6d2c2ac-a887-4e9a-9b74-8bf3ea04815a" }] },
-      { title: "Co-Lead", members: [{ name: "Sohitha", image: "https://harmless-tapir-303.convex.cloud/api/storage/abab97c5-fe9c-4ab6-89d6-62aec61afd47" }, { name: "Guru Sai" }] },
+      { title: "Co-Lead", members: [{ name: "Sohitha", image: "https://harmless-tapir-303.convex.cloud/api/storage/abab97c5-fe9c-4ab6-89d6-62aec61afd47" }, { name: "Guru Sai", image: "/images/team/gurusai.jpg" }] },
     ]
   },
   {
     name: "Technology",
     roles: [
-      { title: "Head", members: [{ name: "D. Naga Chandra Teja", image: "https://harmless-tapir-303.convex.cloud/api/storage/5cb4b06e-79e3-4d71-91bc-74d3d813aba0" }] },
+      { title: "Head", members: [{ name: "D. Naga Chandra Teja", image: "/images/team/teja.jpg" }] },
       { title: "Lead", members: [{ name: "Vasavi Gorantala" }] },
-      { title: "Co-Lead", members: [{ name: "Shaik Mohammed Aasim", image: "https://harmless-tapir-303.convex.cloud/api/storage/f19f04f8-fb37-4e1e-832d-0dc71ee218ee" }, { name: "Kandala Pavan", image: "https://harmless-tapir-303.convex.cloud/api/storage/86238237-813d-4505-b497-f65bcfbcf66d" }] },
+      { title: "Co-Lead", members: [{ name: "Shaik Mohammed Aasim", image: "/images/team/aasim.jpg" }, { name: "Kandala Pavan", image: "/images/team/pavan.jpg" }] },
     ]
   },
   {
@@ -55,7 +55,7 @@ const domainTeams = [
     name: "Marketing",
     roles: [
       { title: "Head", members: [{ name: "Apurva Mishra", image: "/images/team/apurva-mishra.jpg" }] },
-      { title: "Lead", members: [{ name: "Manoj Kumar" }] },
+      { title: "Lead", members: [{ name: "Manoj Kumar", image: "/images/team/manoj.JPEG" }] },
       { title: "Co-Lead", members: [{ name: "J. Riteesh Reddy", image: "/images/team/j-riteesh-reddy.jpg" }] },
     ]
   },
@@ -94,7 +94,7 @@ const domainTeams = [
 ];
 
 const advisoryCommittee = [
-  { name: "Dr. Reema Chaudhury", role: "Director, Campus Life" },
+  { name: "Dr. Reema Chaudhury", role: "Director, Campus Life", image: "/images/team/Reema-Chaudhury.jpg" },
   { name: "Dr. Asha Acharya", role: "Manager, Student Life" },
   { name: "Anitha D", role: "Senior Executive" },
   { name: "Arjun Raghu", role: "Senior Executive" },
