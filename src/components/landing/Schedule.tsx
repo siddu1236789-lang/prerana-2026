@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 import { events } from "@/data/events";
@@ -53,10 +54,18 @@ function buildScheduleFromEvents() {
     if (days.length === 0) days.push("day1"); // default to day1 if not specified
 
     days.forEach(day => {
-      // Avoid duplicate titles
-      if (!sched[day].some(item => item.event === e.title)) {
-        sched[day].push({ time: e.time || e.timeLimit || "", event: e.title, category: e.category, location: e.location || "" });
-      }
+      sched[day].push({ time: e.time || e.timeLimit || "", event: e.title, category: e.category, location: e.location || "", slug: e.slug });
+    });
+  });
+
+  // Deduplicate entries per day (by event, time, location)
+  Object.keys(sched).forEach(day => {
+    const seen = new Set<string>();
+    sched[day] = sched[day].filter(item => {
+      const key = `${(item.event || "").toString().trim().toLowerCase()}|${(item.time || "").toString().trim()}|${(item.location || "").toString().trim().toLowerCase()}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
     });
   });
 
@@ -134,7 +143,16 @@ export default function Schedule() {
                               <div className="flex items-center gap-6">
                                 <div className="text-sm font-bold text-primary w-32 shrink-0">{item.time}</div>
                                 <div>
-                                  <h3 className="text-xl font-semibold">{item.event}</h3>
+                                  {item.slug ? (
+                                    <button
+                                      className="text-xl font-semibold text-primary hover:underline"
+                                      onClick={() => navigate(`/events/${item.category.toLowerCase()}/${item.slug}`)}
+                                    >
+                                      {item.event}
+                                    </button>
+                                  ) : (
+                                    <h3 className="text-xl font-semibold">{item.event}</h3>
+                                  )}
                                   <p className="text-sm text-muted-foreground">{item.location}</p>
                                 </div>
                               </div>
