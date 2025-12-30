@@ -54,7 +54,7 @@ function buildScheduleFromEvents() {
     if (days.length === 0) days.push("day1"); // default to day1 if not specified
 
     days.forEach(day => {
-      sched[day].push({ time: e.time || e.timeLimit || "", event: e.title, category: e.category, location: e.location || "", slug: e.slug });
+      sched[day].push({ time: e.time || e.timeLimit || "", event: e.title, category: e.category, location: e.location || "" });
     });
   });
 
@@ -75,6 +75,7 @@ function buildScheduleFromEvents() {
 const schedule = buildScheduleFromEvents();
 
 export default function Schedule() {
+  const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState("All");
 
   const categories = ["All", "Main Events", "Cultural", "Technology", "Wellness"];
@@ -143,16 +144,7 @@ export default function Schedule() {
                               <div className="flex items-center gap-6">
                                 <div className="text-sm font-bold text-primary w-32 shrink-0">{item.time}</div>
                                 <div>
-                                  {item.slug ? (
-                                    <button
-                                      className="text-xl font-semibold text-primary hover:underline"
-                                      onClick={() => navigate(`/events/${item.category.toLowerCase()}/${item.slug}`)}
-                                    >
-                                      {item.event}
-                                    </button>
-                                  ) : (
-                                    <h3 className="text-xl font-semibold">{item.event}</h3>
-                                  )}
+                                  <h3 className="text-xl font-semibold">{item.event}</h3>
                                   <p className="text-sm text-muted-foreground">{item.location}</p>
                                 </div>
                               </div>
