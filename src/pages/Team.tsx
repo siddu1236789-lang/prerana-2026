@@ -95,13 +95,13 @@ const domainTeams = [
 
 const advisoryCommittee = [
   { name: "Dr. Reema Chaudhury", role: "Director, Campus Life", image: "/images/team/Reema-Chaudhury.jpg" },
-  { name: "Dr. Asha Acharya", role: "Manager, Student Life" },
-  { name: "Anitha D", role: "Senior Executive" },
+  { name: "Dr. Asha Acharya", role: "Manager, Student Life", image: "/images/team/asha.JPG", subrole: "co-mentor" },
+  { name: "Anitha D", role: "Senior Executive", image: "/images/team/anita.jpeg" },
   { name: "Arjun Raghu", role: "Senior Executive" },
   { name: "Pranav Amarnath", role: "Senior Executive (Wellness)" },
-  { name: "Meghana Musku", role: "Senior Executive (Wellness)" },
-  { name: "Srikanth Basavraj", role: "Senior Executive" },
-  { name: "Rayanka Debnath", role: "Senior Executive" },
+  { name: "Meghana Musku", role: "Senior Executive (Wellness)", image: "/images/team/meghana.JPG" },
+  { name: "Srikanth Basavraj", role: "Senior Executive", image: "/images/team/srikanth.JPG" },
+  { name: "Rayanka Debnath", role: "Senior Executive", image: "/images/team/rayanka.JPG" },
   { name: "Ayush BM", role: "Executive - Visual Content" },
 ];
 
@@ -204,6 +204,9 @@ export default function Team() {
                         <p className="text-lg md:text-xl text-primary font-medium tracking-wide uppercase">
                           {member.role}
                         </p>
+                        {(member as any).subrole && (
+                          <p className="text-sm text-muted-foreground">{(member as any).subrole}</p>
+                        )}
                       </div>
                     </CardHeader>
                   </Card>

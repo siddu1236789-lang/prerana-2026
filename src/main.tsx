@@ -32,6 +32,7 @@ import TechnicalRegistration from "./pages/register/Technical.tsx";
 import CulturalRegistration from "./pages/register/Cultural.tsx";
 import WellnessRegistration from "./pages/register/Wellness.tsx";
 import GeneralRegistration from "./pages/register/General.tsx";
+import GetPassFloating from "@/components/GetPassFloating";
 
 // Simple loading fallback for route transitions
 function RouteLoading() {
@@ -105,6 +106,9 @@ createRoot(document.getElementById("root")!).render(
               <Route path="/admin/brochure" element={<AdminBrochure />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
+
+            {/* Floating get passes button */}
+            <GetPassFloating />
           </ErrorBoundary>
         </BrowserRouter>
         <Toaster />

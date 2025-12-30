@@ -43,6 +43,35 @@ export default function EventDetails({ event: selectedEvent, category }: EventDe
     }
   };
 
+  // Try to open an event brochure PDF if available. Checks event-specific path, then defaults.
+  const openBrochure = async () => {
+    if (!selectedEvent) {
+      alert('Event brochure coming soon');
+      return;
+    }
+
+    const candidates = [
+      (selectedEvent as any).brochure,
+      `/events/${(selectedEvent as any).slug}-brochure.pdf`,
+      '/events-brochure.pdf',
+      '/Sponsorship_Brochure.pdf'
+    ].filter(Boolean) as string[];
+
+    for (const url of candidates) {
+      try {
+        const res = await fetch(url, { method: 'HEAD' });
+        if (res.ok) {
+          window.open(url, '_blank', 'noopener');
+          return;
+        }
+      } catch (e) {
+        // ignore and try next
+      }
+    }
+
+    alert('Event brochure coming soon');
+  };
+
   return (
     <div className="max-w-4xl mx-auto">
       <div className="mb-6">
@@ -70,13 +99,24 @@ export default function EventDetails({ event: selectedEvent, category }: EventDe
             <div className="text-3xl font-bold text-primary">
               {selectedEvent.registrationFee === "0" ? "Free" : selectedEvent.registrationFee}
             </div>
-            <Button 
-              size="lg" 
-              className="text-lg px-8 shadow-lg shadow-primary/20"
-              onClick={handleRegister}
-            >
-              Register Now
-            </Button>
+            <div className="flex gap-3">
+              <Button 
+                size="lg" 
+                className="text-lg px-8 shadow-lg shadow-primary/20"
+                onClick={handleRegister}
+              >
+                Register Now
+              </Button>
+
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-lg px-6"
+                onClick={openBrochure}
+              >
+                View Event Brochure
+              </Button>
+            </div>
           </div>
         </div>
 

@@ -10,7 +10,8 @@ import { api } from "@/convex/_generated/api";
 export default function Sponsors() {
   const navigate = useNavigate();
   const uploadedBrochureUrl = useQuery(api.documents.getBrochure);
-  const brochureUrl = uploadedBrochureUrl || "/Sponsorship_Brochure.pdf";
+  // Fallback to the uploaded static PDF (URL-encoded since filename has spaces/#)
+  const brochureUrl = uploadedBrochureUrl || "/Sponsorship%20Brouchure%20%23CMYK_compressed.pdf";
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans relative overflow-hidden">
@@ -49,7 +50,7 @@ export default function Sponsors() {
                   Download our detailed sponsorship brochure to explore partnership tiers, benefits, and opportunities for Prerana 2026.
                 </p>
                 <Button size="lg" className="w-full sm:w-auto" asChild>
-                  <a href={"https://drive.google.com/file/d/1h3otPN3dF2iYaPQRprG920MFgeIx9trJ/view?usp=drive_link"} target="_blank" rel="noopener noreferrer">
+                  <a href="/Sponsorship%20Brouchure%20%23CMYK_compressed.pdf" download="Sponsorship_Brochure_CMYK.pdf" target="_blank" rel="noopener noreferrer">
                     Download Brochure (PDF)
                   </a>
                 </Button>
