@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate as useRouterNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 import { events } from "@/data/events";
@@ -75,7 +75,7 @@ function buildScheduleFromEvents() {
 const schedule = buildScheduleFromEvents();
 
 export default function Schedule() {
-  const navigate = useNavigate();
+  const navigate = useRouterNavigate();
   const [activeCategory, setActiveCategory] = useState("All");
 
   const categories = ["All", "Main Events", "Cultural", "Technology", "Wellness"];

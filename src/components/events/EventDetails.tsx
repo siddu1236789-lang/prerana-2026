@@ -17,9 +17,9 @@ export default function EventDetails({ event: selectedEvent, category }: EventDe
 
     const cat = selectedEvent.category.toLowerCase();
     const formMap: Record<string, string> = {
-      technical: 'https://forms.gle/KYqstmztD7UazrBu6',
-      wellness: 'https://forms.gle/sqGzHvJY8Y8hPuDK6',
-      cultural: 'https://forms.gle/YpQCfXMVQ4kasDtB6'
+      technical: 'https://forms.gle/cvpkkSALCAeaC6s4A',
+      wellness: 'https://forms.gle/qZHaTmpfXSqV21Em9',
+      cultural: 'https://forms.gle/J7drNFtCpNwJyMcE7'
     };
     const url = formMap[cat];
     if (url) {
