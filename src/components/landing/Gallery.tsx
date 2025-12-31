@@ -70,7 +70,7 @@ export default function Gallery() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Relive the Magic: Prerana 2025</h2>
-          <p className="text-muted-foreground">Highlights from the previous year.</p>
+          <p className="text-muted-foreground">Highlights from the previous year</p>
         </div>
 
         {/* 3-row horizontal marquee */}

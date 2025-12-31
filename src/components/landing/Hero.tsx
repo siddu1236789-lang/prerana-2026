@@ -73,14 +73,24 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-2xl md:text-3xl text-white/90 mb-4 font-semibold drop-shadow-md">
-              <span className="font-semibold">The Spectrum Within</span>
-            </p>
-            <p className="text-lg md:text-xl text-white/70 mb-8 font-semibold drop-shadow-md">
-              <span className="font-semibold"> Theme: Innovation, Collaboration, Hope</span>
-            </p>
             
-            <div className="flex flex-wrap justify-center gap-6 mb-12 text-white/80">
+           
+
+            {/* Countdown */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-xl mx-auto mb-12">
+              {[
+                { label: "Days", value: timeLeft.days },
+                { label: "Hours", value: timeLeft.hours },
+                { label: "Minutes", value: timeLeft.minutes },
+                { label: "Seconds", value: timeLeft.seconds },
+              ].map((item) => (
+                <div key={item.label} className="bg-card/50 backdrop-blur-md border border-white/10 p-3 rounded-xl">
+                  <div className="text-xl font-bold text-white mb-1 font-mono">{item.value.toString().padStart(2, '0')}</div>
+                  <div className="text-[10px] text-white/60 uppercase tracking-wider">{item.label}</div>
+                </div>
+              ))}
+            </div>
+             <div className="flex flex-wrap justify-center gap-6 mb-12 text-white/80">
               <div className="flex items-center gap-2 bg-muted/30 px-4 py-2 rounded-full backdrop-blur-md border border-white/10">
                 <Calendar className="w-5 h-5 text-primary" />
                 <a
@@ -103,21 +113,6 @@ export default function Hero() {
                   GITAM University, Bengaluru
                 </a>
               </div>
-            </div>
-
-            {/* Countdown */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-xl mx-auto mb-12">
-              {[
-                { label: "Days", value: timeLeft.days },
-                { label: "Hours", value: timeLeft.hours },
-                { label: "Minutes", value: timeLeft.minutes },
-                { label: "Seconds", value: timeLeft.seconds },
-              ].map((item) => (
-                <div key={item.label} className="bg-card/50 backdrop-blur-md border border-white/10 p-3 rounded-xl">
-                  <div className="text-xl font-bold text-white mb-1 font-mono">{item.value.toString().padStart(2, '0')}</div>
-                  <div className="text-[10px] text-white/60 uppercase tracking-wider">{item.label}</div>
-                </div>
-              ))}
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

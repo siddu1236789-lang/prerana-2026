@@ -13,7 +13,7 @@ export default function CtaBar() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold mb-2">Ready to Join the Revolution?</h2>
-            <p className="text-muted-foreground text-lg">Secure your spot at Prerana 2026 today.</p>
+            <p className="text-muted-foreground text-lg">Secure your spot at Prerana 2026 today</p>
           </div>
           
           <motion.div

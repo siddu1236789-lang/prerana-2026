@@ -17,7 +17,7 @@ export default function About() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
-            WHAT IS PRERANA? — Prerana 2026: <span className="italic font-normal">The Spectrum Within</span>
+            WHAT IS PRERANA? — Prerana 2026:
           </h2>
 
           <div className="px-4">
