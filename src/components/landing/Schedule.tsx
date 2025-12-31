@@ -11,31 +11,41 @@ import { events } from "@/data/events";
 
 const staticSchedule = {
   day1: [
-    { time: "09:00 AM – 09:30 AM", event: "Torch Relay & Flag Hoisting", category: "Ceremony", location: "Underpass to Shivaji Bhavan" },
-    { time: "09:45 AM – 09:50 AM", event: "SPICMACAY Performance", category: "Cultural", location: "In front of SB" },
+    { time: "09:00 AM – 09:30 AM", event: "Torch Relay", category: "Ceremony", location: "Underpass to Shivaji Bhavan" },
+    { time: "09:45 AM – 10:00 AM", event: "Inauguration & SPICMACAY Performance", category: "Cultural", location: "In front of SB" },
     { time: "10:00 AM – 10:30 AM", event: "Chenda Mela Performance", category: "Cultural", location: "In front of SB" },
-    { time: "10:30 AM – 04:00 PM", event: "Wellness Zone Activities", category: "Wellness", location: "Opposite to Vinaysadan Lawn" },
+    { time: "10:30 AM – 04:00 PM", event: "Wellness Zone Activities", category: "Wellness", location: "Gitam Lawn (Opposite to Vinaysadan)" },
     { time: "11:00 AM – 04:00 PM", event: "Project Expo", category: "Technical", location: "VDC (Innovation Street)" },
     { time: "10:30 AM – 01:30 PM", event: "Gamethon — Theme Reveal & Start", category: "Technical", location: "VB 501" },
     { time: "10:30 AM – 11:20 AM", event: "Solo Singing", category: "Cultural", location: "Auditorium" },
     { time: "10:30 AM – 11:30 AM", event: "Short Film Making", category: "Cultural", location: "VB 203" },
     { time: "11:30 AM – 12:40 PM", event: "Battle of Bands", category: "Cultural", location: "Auditorium" },
+    { time: "11:35 AM – 12:20 PM", event: "Reel Contest", category: "Cultural", location: "VB 203" },
+    { time: "01:00 PM – 01:40 PM", event: "Sketching", category: "Cultural", location: "VB 204" },
     { time: "01:00 PM – 02:20 PM", event: "Fashion Walk", category: "Cultural", location: "Auditorium" },
+    { time: "02:00 PM – 03:30 PM", event: "Story Telling", category: "Cultural", location: "VB 204" },
     { time: "02:30 PM – 03:20 PM", event: "Drama Competition", category: "Cultural", location: "Auditorium" },
     { time: "03:20 PM – 04:00 PM", event: "Mono Acting", category: "Cultural", location: "Auditorium" },
-    { time: "04:00 PM – 04:30 PM", event: "Project Expo Judgement", category: "Technical", location: "VDC" },
     { time: "04:00 PM – 05:30 PM", event: "Army Band Performance", category: "Cultural", location: "Main Stage" },
     { time: "06:00 PM – 08:30 PM", event: "Band Performance with Artist", category: "Cultural", location: "Main Stage" },
   ],
   day2: [
-    { time: "08:00 AM – 08:30 AM", event: "Rise of Hope (Balloon Release)", category: "Ceremony", location: "Basketball Court" },
+    { time: "09:30 AM – 10:00 AM", event: "Rise of Hope (Balloon Release) & Prerana Logo Formation", category: "Ceremony", location: "Track" },
     { time: "09:00 AM – 05:00 PM", event: "Hackathon — 8 Hour Sprint", category: "Technical", location: "VDC (Alpha, Beta & Gamma)" },
     { time: "10:00 AM – 04:00 PM", event: "Wellness Zones", category: "Wellness", location: "Opposite to Vinaysadan Lawn" },
     { time: "10:00 AM – 10:50 AM", event: "Solo Dance (Indian)", category: "Cultural", location: "Auditorium" },
+    { time: "10:00 AM – 01:30 PM", event: "Photography Contest", category: "Cultural", location: "VB 203" },
+    { time: "10:55 AM – 11:50 AM", event: "Group Dance (Indian)", category: "Cultural", location: "Auditorium" },
+    { time: "11:00 AM – 12:30 PM", event: "Genspeak Studio", category: "Cultural", location: "VB 501" },
+    { time: "11:00 AM – 12:20 PM", event: "Poster Making Contest", category: "Cultural", location: "VB 204" },
+    { time: "12:00 PM – 01:00 PM", event: "Solo Dance (Western)", category: "Cultural", location: "Auditorium" },
     { time: "12:00 PM – 01:00 PM", event: "Maze Finder Mouse", category: "Technical", location: "VDC (Kojo)" },
+    { time: "01:00 PM – 01:45 PM", event: "Spot Choreography", category: "Cultural", location: "Basketball Court" },
     { time: "02:00 PM – 03:00 PM", event: "Drone Workshop (Demo)", category: "Technical", location: "VB 204" },
-    { time: "02:00 PM – 04:00 PM", event: "Art Therapy Corner", category: "Wellness", location: "Opposite to Vinaysadan Lawn" },
-    { time: "04:30 PM – 05:25 PM", event: "Cultural Showcase", category: "Cultural", location: "Main Stage" },
+    { time: "02:00 PM – 03:45 PM", event: "Script Writting", category: "Cultural", location: "VB 205" },
+    { time: "02:00 PM – 02:55 PM", event: "Duet Dance", category: "Cultural", location: "Auditorium" },
+    { time: "03:00 PM – 04:00 PM", event: "Group Dance (Western)", category: "Cultural", location: "Auditorium" },
+    { time: "04:30 PM – 06:00 PM", event: "Club Performances", category: "Cultural", location: "Main Stage" },
     { time: "06:00 PM – 08:30 PM", event: "DJ Night", category: "Cultural", location: "Main Stage" },
   ],
 };
@@ -68,6 +78,17 @@ function buildScheduleFromEvents() {
       return true;
     });
   });
+
+  // Trim events after headline items on each day
+  const trimAfter = (arr: any[], matchTitle: string) => {
+    const idx = arr.findIndex(item => (item.event || "").toString().trim().toLowerCase() === matchTitle.toLowerCase());
+    if (idx !== -1) {
+      arr.splice(idx + 1);
+    }
+  };
+
+  trimAfter(sched.day1, "Band Performance with Artist");
+  trimAfter(sched.day2, "DJ Night");
 
   return sched;
 }

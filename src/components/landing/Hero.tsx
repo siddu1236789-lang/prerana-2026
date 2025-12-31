@@ -73,21 +73,35 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-2xl md:text-3xl font-light text-white/90 mb-4 tracking-wide drop-shadow-lg">
-              The Spectrum Within
+            <p className="text-2xl md:text-3xl font-light italic text-white/90 mb-4 tracking-wide drop-shadow-lg">
+              <span className="italic font-normal">The Spectrum Within</span>
             </p>
-            <p className="text-lg md:text-xl text-white/70 mb-8 font-light italic drop-shadow-md">
-              Theme: Innovation, Collaboration, and Hope
+            <p className="text-lg md:text-xl text-white/70 mb-8 font-semibold drop-shadow-md">
+              <span className="font-semibold">Innovation, Collaboration, Hope</span>
             </p>
             
             <div className="flex flex-wrap justify-center gap-6 mb-12 text-white/80">
               <div className="flex items-center gap-2 bg-muted/30 px-4 py-2 rounded-full backdrop-blur-md border border-white/10">
                 <Calendar className="w-5 h-5 text-primary" />
-                <span>Jan 22 - Jan 23, 2026</span>
+                <a
+                  href="https://calendar.google.com/calendar/u/0/r/week/2026/1/22"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  <span>Jan 22 - Jan 23, 2026</span>
+                </a>
               </div>
               <div className="flex items-center gap-2 bg-muted/30 px-4 py-2 rounded-full backdrop-blur-md border border-white/10">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span>GITAM University, Bengaluru</span>
+                <a
+                  href="https://www.google.com/maps/place/GITAM+Deemed+to+be+University+Bengaluru/@13.2866427,77.5930016,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae3df04c9efe91:0x74ef0f7e2f81d564!8m2!3d13.2866427!4d77.5955765!16s%2Fg%2F1hjgjmxwt?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  GITAM University, Bengaluru
+                </a>
               </div>
             </div>
 
@@ -125,8 +139,8 @@ export default function Hero() {
             </div>
 
             <div className="mt-8 text-center">
-              <Button variant="link" className="text-primary text-xl gap-2" onClick={() => navigate("/schedule") }>
-                View Full Schedule <ArrowRight className="w-5 h-5" />
+              <Button className="text-lg gap-0" onClick={() => navigate("/schedule")}>
+            View Full Schedule 
               </Button>
             </div>
           </motion.div>

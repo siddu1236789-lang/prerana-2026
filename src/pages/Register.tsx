@@ -111,7 +111,7 @@ export default function Register() {
                   <Heart className="w-6 h-6 text-accent" />
                 </div>
                 <CardTitle className="text-2xl">Wellness Events</CardTitle>
-                <CardDescription>Yoga, Meditation, and Mental Health</CardDescription>
+                <CardDescription>Wellness Experiences curated to support physical, mental and emotional well-being</CardDescription>
               </CardHeader>
               <CardContent className="flex-1">
                 <p className="text-muted-foreground">

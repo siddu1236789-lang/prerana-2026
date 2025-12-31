@@ -95,7 +95,7 @@ const domainTeams = [
 
 const advisoryCommittee = [
   { name: "Dr. Reema Chaudhury", role: "Director, Campus Life", image: "/images/team/Reema-Chaudhury.jpg" },
-  { name: "Dr. Asha Acharya", role: "Manager, Student Life", image: "/images/team/asha.JPG", subrole: "co-mentor" },
+  { name: "Dr. Asha Acharya", role: "Co-mentor, Documentation, Operations, Marketing", image: "/images/team/asha.JPG", subrole: "co-mentor" },
   { name: "Anitha D", role: "Senior Executive", image: "/images/team/anita.jpeg" },
   { name: "Arjun Raghu", role: "Senior Executive", image: "/images/team/arjun.jpeg" },
   { name: "Pranav Amarnath", role: "Senior Executive (Wellness)", image: "/images/team/pranav%20sir.png" },

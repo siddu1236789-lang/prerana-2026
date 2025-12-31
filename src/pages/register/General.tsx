@@ -10,7 +10,7 @@ export default function GeneralRegistration() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">General Fest Registration</h1>
-            <p className="text-xl text-muted-foreground">Get your pass for Prerana 2026 - The Spectrum Within</p>
+            <p className="text-xl text-muted-foreground">Get your pass for Prerana 2026 - <span className="italic font-normal">The Spectrum Within</span></p>
           </div>
 
           <Card className="w-full max-w-4xl mx-auto overflow-hidden border-primary/20 shadow-lg shadow-primary/5">
