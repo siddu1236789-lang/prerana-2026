@@ -80,20 +80,31 @@ export default function Gallery() {
             .marquee-item img { display:block }
           `}</style>
 
-          {/** Create 3 rows. Each row duplicates the photo set for seamless looping. */}
-          {[0, 1, 2].map((rowIdx) => {
-            const direction = rowIdx % 2 === 0 ? 'normal' : 'reverse';
-            const durations = [30, 22, 26]; // seconds per row (varied speeds)
-            const duration = durations[rowIdx % durations.length];
-            return (
-              <MarqueeRow
-                key={rowIdx}
-                photos={images.map((i) => i.src)}
-                duration={duration}
-                direction={direction}
-              />
-            );
-          })}
+          {/** Create 3 rows with distinct photo sets (round-robin distribution). */}
+          {(() => {
+            const all = images.map((i) => i.src).filter((s) => !s.toLowerCase().endsWith('.arw'));
+            // distribute photos round-robin into 3 rows so each row is different
+            const rows: string[][] = [[], [], []];
+            all.forEach((p, i) => rows[i % 3].push(p));
+            // ensure each row has at least 3 items by repeating if necessary
+            for (let r = 0; r < rows.length; r++) {
+              while (rows[r].length < 3) rows[r] = rows[r].concat(rows[r]);
+            }
+
+            const durations = [30, 22, 26];
+            return rows.map((rowPhotos, rowIdx) => {
+              const direction = rowIdx % 2 === 0 ? 'normal' : 'reverse';
+              const duration = durations[rowIdx % durations.length];
+              return (
+                <MarqueeRow
+                  key={rowIdx}
+                  photos={rowPhotos}
+                  duration={duration}
+                  direction={direction}
+                />
+              );
+            });
+          })()}
         </div>
       </div>
     </section>
