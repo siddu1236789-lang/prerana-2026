@@ -132,7 +132,7 @@ export default function FAQ() {
           items: [
             {
               question: "Is accommodation available for outstation participants?",
-              answer: "Yes. Limited on-campus accommodation is available on a paid basis at ₹700 per night per person. Availability is first-come, first-served. Booking details will be shared on the /events or /register page."
+              answer: "Yes. Limited on-campus accommodation is available on a paid basis at ₹700 per night per person. Availability is first-come, first-served."
             },
             {
               question: "What items are allowed/not allowed in accommodation rooms?",
