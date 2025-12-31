@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 
 const images = [
@@ -21,7 +22,7 @@ const images = [
 
   // Appended: local uploaded photos (RAW omitted)
   { src: "/photos/IMG_9091.jpg", span: "md:col-span-1 md:row-span-1" },
-  { src: "/photos/IMG_8609.jpg", span: "md:col-span-1 md:row-span-1" },
+  { src: "/photos/IMG_8609.jpg", span: "md:col-span-1 md:row-span-2" },
   { src: "/photos/IMG_8627.jpg", span: "md:col-span-1 md:row-span-1" },
   { src: "/photos/DSC02186.jpg", span: "md:col-span-1 md:row-span-1" },
   { src: "/photos/DSC02472.jpg", span: "md:col-span-1 md:row-span-1" },
@@ -30,6 +31,36 @@ const images = [
   { src: "/photos/IMG_7847.JPG", span: "md:col-span-1 md:row-span-1" },
   { src: "/photos/IMG_9283.jpg", span: "md:col-span-1 md:row-span-1" },
 ];
+
+function MarqueeRow({ photos, duration, direction }: { photos: string[]; duration: number; direction: 'normal' | 'reverse' }) {
+  const [paused, setPaused] = React.useState(false);
+
+  // Duplicate the photos so the animation can loop seamlessly
+  const combined = React.useMemo(() => [...photos, ...photos], [photos]);
+
+  const style: React.CSSProperties = {
+    animation: `marquee ${duration}s linear infinite`,
+    animationPlayState: paused ? 'paused' : 'running',
+    animationDirection: direction,
+    willChange: 'transform',
+  };
+
+  return (
+    <div
+      className="overflow-hidden rounded-xl py-2"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
+      <div className="marquee-track" style={style} aria-hidden={false}>
+        {combined.map((src, i) => (
+          <div className="marquee-item h-40 w-64" key={i}>
+            <img src={src} alt={`Gallery image ${i + 1}`} className="h-full w-full object-cover" />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function Gallery() {
   return (
@@ -40,26 +71,29 @@ export default function Gallery() {
           <p className="text-muted-foreground">Highlights from the previous year.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[200px] max-w-6xl mx-auto grid-flow-dense">
-          {images.map((img, index) => (
-            <motion.div
-              key={index}
-              className={`relative rounded-xl overflow-hidden group ${img.span}`}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <img
-                src={img.src}
-                alt={`Gallery ${index + 1}`}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        {/* 3-row horizontal marquee */}
+        <div className="max-w-6xl mx-auto space-y-6">
+          <style>{`
+            .marquee-track { display:flex; gap:1rem; align-items:center; }
+            @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+            .marquee-item { flex:0 0 auto; border-radius:0.5rem; overflow:hidden }
+            .marquee-item img { display:block }
+          `}</style>
+
+          {/** Create 3 rows. Each row duplicates the photo set for seamless looping. */}
+          {[0, 1, 2].map((rowIdx) => {
+            const direction = rowIdx % 2 === 0 ? 'normal' : 'reverse';
+            const durations = [30, 22, 26]; // seconds per row (varied speeds)
+            const duration = durations[rowIdx % durations.length];
+            return (
+              <MarqueeRow
+                key={rowIdx}
+                photos={images.map((i) => i.src)}
+                duration={duration}
+                direction={direction}
               />
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white font-bold text-lg">View</span>
-              </div>
-            </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
