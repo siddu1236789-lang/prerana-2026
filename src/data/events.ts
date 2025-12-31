@@ -813,7 +813,7 @@ export const events: Event[] = [
     code: "WELL01",
     category: "Wellness",
     shortDescription: "A vibrant, interactive expression wall designed to uplift the campus spirit.",
-    fullDescription: "A vibrant, interactive expression wall designed to uplift the campus spirit. Students can write motivational quotes, affirmations, gratitude notes, and personal hopes on colourful slips and pin them up. Over the course of the day, the wall transforms into a collective symbol of optimism and unity—showcasing hundreds of messages that reflect courage, emotional resilience, and mutual encouragement. Volunteers will be present to guide participants and capture standout moments for social media highlights.",
+    fullDescription: ".",
     location: "Gitam Lawn (opposite Vinay Sadan)",
     teamSize: "Open to all",
     eligibility: "Open to all",
@@ -825,7 +825,7 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "wall-of-hope",
-    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
+    day: "Day 1 - (22-Jan-2026)",
     timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
@@ -846,8 +846,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "fit-and-fine-desk",
-    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
-    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
+    day: "Day 1 - (22-Jan-2026)",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM"
   },
   {
     id: "well03",
@@ -867,8 +867,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "fitness-fun-alley",
-    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
-    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
+    day: "Day 1 - (22-Jan-2026)",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM"
   },
   {
     id: "well04",
@@ -888,8 +888,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "zen-zone",
-    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
-    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
+    day: "Day 1 - (22-Jan-2026)",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM"
   },
   {
     id: "well05",
@@ -930,8 +930,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "clay-modelling-worry-stones",
-    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
-    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
+    day: "Day 2 - (23-Jan-2026)",
+    timeLimit: "Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well07",
@@ -951,17 +951,17 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "make-me-smile-booth",
-    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
-    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
+    day: "Day 2 - (23-Jan-2026)",
+    timeLimit: "Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well08",
-    title: "Prerana Formation and Rise of Hope Session",
+    title: "Rise of Hope (Balloon Release) & Prerana Logo Formation",
     code: "WELL08",
     category: "Wellness",
     shortDescription: "Prerana logo formation.",
     fullDescription: "Participants will form the Prerana logo through human formation, symbolizing unity, teamwork, and togetherness. This will be followed by the release of helium balloons carrying symbolic messages, representing hope, positivity, and a strong collective spirit. The moment will be visually captured to mark the grand beginning of the fest.",
-    location: "Gitam Lawn (opposite Vinay Sadan)",
+    location: "Track",
     teamSize: "Individual",
     eligibility: "Open to all",
     registrationFee: "Free",
