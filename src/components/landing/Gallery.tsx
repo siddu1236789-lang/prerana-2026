@@ -30,6 +30,8 @@ const images = [
   { src: "/photos/IMG_7835.JPG", span: "md:col-span-1 md:row-span-1" },
   { src: "/photos/IMG_7847.JPG", span: "md:col-span-1 md:row-span-1" },
   { src: "/photos/IMG_9283.jpg", span: "md:col-span-1 md:row-span-1" },
+  // Converted RAW
+  { src: "/photos/DSC01412.jpg", span: "md:col-span-1 md:row-span-1" },
 ];
 
 function MarqueeRow({ photos, duration, direction }: { photos: string[]; duration: number; direction: 'normal' | 'reverse' }) {
