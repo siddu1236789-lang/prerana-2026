@@ -21,6 +21,18 @@ const galleryItems = [
   { id: 6, type: "photo", src: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=1000", category: "Cultural", year: "2025", span: "md:col-span-1 md:row-span-1" },
   { id: 7, type: "photo", src: "https://images.unsplash.com/photo-1504384308090-c54be3852f33?auto=format&fit=crop&q=80&w=1000", category: "Technical", year: "2023", span: "md:col-span-2 md:row-span-1" },
   { id: 8, type: "photo", src: "https://images.unsplash.com/photo-1459749411177-0473ef71607b?auto=format&fit=crop&q=80&w=1000", category: "Concert", year: "2024", span: "md:col-span-1 md:row-span-1" },
+
+  // Local uploads
+  { id: 9, type: "photo", src: "/photos/DSC01412.jpg", category: "Cultural", year: "2025", span: "md:col-span-2 md:row-span-2" },
+  { id: 10, type: "photo", src: "/photos/DSC02186.jpg", category: "Concert", year: "2025", span: "md:col-span-1 md:row-span-1" },
+  { id: 11, type: "photo", src: "/photos/DSC02472.jpg", category: "Crowd", year: "2025", span: "md:col-span-1 md:row-span-1" },
+  { id: 12, type: "photo", src: "/photos/DSC_6645.jpg", category: "Cultural", year: "2025", span: "md:col-span-1 md:row-span-1" },
+  { id: 13, type: "photo", src: "/photos/IMG_7835.JPG", category: "Concert", year: "2025", span: "md:col-span-1 md:row-span-1" },
+  { id: 14, type: "photo", src: "/photos/IMG_7847.JPG", category: "Cultural", year: "2025", span: "md:col-span-1 md:row-span-1" },
+  { id: 15, type: "photo", src: "/photos/IMG_8609.jpg", category: "Crowd", year: "2025", span: "md:col-span-1 md:row-span-1" },
+  { id: 16, type: "photo", src: "/photos/IMG_8627.jpg", category: "Technical", year: "2025", span: "md:col-span-1 md:row-span-1" },
+  { id: 17, type: "photo", src: "/photos/IMG_9091.jpg", category: "Concert", year: "2025", span: "md:col-span-1 md:row-span-1" },
+  { id: 18, type: "photo", src: "/photos/IMG_9283.jpg", category: "Crowd", year: "2025", span: "md:col-span-1 md:row-span-1" },
 ];
 
 const videos = [
