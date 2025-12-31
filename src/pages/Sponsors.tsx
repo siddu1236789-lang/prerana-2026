@@ -11,7 +11,7 @@ export default function Sponsors() {
   const navigate = useNavigate();
   const uploadedBrochureUrl = useQuery(api.documents.getBrochure);
   // Fallback to the uploaded static PDF (URL-encoded since filename has spaces/#)
-  const brochureUrl = uploadedBrochureUrl || "/Sponsorship%20Brouchure%20%23CMYK_compressed.pdf";
+  const brochureUrl = uploadedBrochureUrl || "/Prerana%20Sponsorship%20Brochure%23Basic.pdf";
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans relative overflow-hidden">
@@ -50,8 +50,8 @@ export default function Sponsors() {
                   Download our detailed sponsorship brochure to explore partnership tiers, benefits, and opportunities for Prerana 2026.
                 </p>
                 <Button size="lg" className="w-full sm:w-auto" asChild>
-                  <a href="/Sponsorship%20Brouchure%20%23CMYK_compressed.pdf" download="Sponsorship_Brochure_CMYK.pdf" target="_blank" rel="noopener noreferrer">
-                    Download Brochure (PDF)
+                  <a href={brochureUrl} download="Prerana Sponsorship Brochure - Basic.pdf" target="_blank" rel="noopener noreferrer">
+                    Download Brochure
                   </a>
                 </Button>
               </CardContent>
