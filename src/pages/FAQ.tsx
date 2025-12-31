@@ -236,7 +236,7 @@ export default function FAQ() {
           items: [
             {
               question: "How do I register for technical events?",
-              answer: "All technical event registrations must be done through the Official Registration Page. Select your events and complete payment through GITAM Pay/G-Events."
+              answer: "All technical event registrations must be done through the Official Registration Page. Select your events and complete payment through Google form. Each event permits a single registration per participant; registrations must be completed individually for every event. "
             },
             {
               question: "Can I participate in multiple technical events?",

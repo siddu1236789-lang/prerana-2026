@@ -73,18 +73,18 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-2xl md:text-3xl font-light italic text-white/90 mb-4 tracking-wide drop-shadow-lg">
-              <span className="italic font-normal">The Spectrum Within</span>
+            <p className="text-2xl md:text-3xl text-white/90 mb-4 font-semibold drop-shadow-md">
+              <span className="font-semibold">The Spectrum Within</span>
             </p>
             <p className="text-lg md:text-xl text-white/70 mb-8 font-semibold drop-shadow-md">
-              <span className="font-semibold">Innovation, Collaboration, Hope</span>
+              <span className="font-semibold"> Theme: Innovation, Collaboration, Hope</span>
             </p>
             
             <div className="flex flex-wrap justify-center gap-6 mb-12 text-white/80">
               <div className="flex items-center gap-2 bg-muted/30 px-4 py-2 rounded-full backdrop-blur-md border border-white/10">
                 <Calendar className="w-5 h-5 text-primary" />
                 <a
-                  href="https://calendar.google.com/calendar/u/0/r/week/2026/1/22"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -130,8 +130,7 @@ export default function Hero() {
               </Button>
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="text-lg px-8 py-6 rounded-xl bg-black/20 backdrop-blur-sm border-white/20 hover:bg-white/10 w-full sm:w-auto"
+                className="text-lg px-8 py-6 rounded-xl bg-[var(--primary)] text-[var(--primary-foreground)] border-transparent shadow-[0_0_20px_-5px_var(--primary)] hover:brightness-105 hover:shadow-[0_0_30px_-5px_var(--primary)] focus-visible:ring-2 focus-visible:ring-[var(--ring)] transition-shadow w-full sm:w-auto"
                 onClick={() => navigate("/events")}
               >
                 Explore Events
