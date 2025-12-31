@@ -39,7 +39,7 @@ const domainTeams = [
     name: "Technology",
     roles: [
       { title: "Head", members: [{ name: "D. Naga Chandra Teja", image: "/images/team/teja.jpg" }] },
-      { title: "Lead", members: [{ name: "Vasavi Gorantala" }] },
+      { title: "Lead", members: [{ name: "Vasavi Gorantala", image: "/images/team/vasavi.jpg" }] },
       { title: "Co-Lead", members: [{ name: "Shaik Mohammed Aasim", image: "/images/team/aasim.jpg" }, { name: "Kandala Pavan", image: "/images/team/pavan.jpg" }] },
     ]
   },
@@ -99,7 +99,7 @@ const advisoryCommittee = [
   { name: "Anitha D", role: "Senior Executive", image: "/images/team/anita.jpeg" },
   { name: "Arjun Raghu", role: "Senior Executive", image: "/images/team/arjun.jpeg" },
   { name: "Pranav Amarnath", role: "Senior Executive (Wellness)", image: "/images/team/pranav%20sir.png" },
-  { name: "Meghana Musku", role: "Senior Executive (Wellness)", image: "/images/team/meghana.JPG" },
+  { name: "Meghana Musku", role: "Senior Executive (Wellness)", image: "/images/team/meghana%20mam.png" },
   { name: "Srikanth Basavraj", role: "Senior Executive", image: "/images/team/srikanth.JPG" },
   { name: "Rayanka Debnath", role: "Senior Executive", image: "/images/team/rayanka.JPG" },
   { name: "Ayush BM", role: "Executive - Visual Content" },
