@@ -4,14 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
 import { Download } from "lucide-react";
-import { useQuery } from "convex/react";
-import { api } from "@/convex/_generated/api";
-
 export default function Sponsors() {
   const navigate = useNavigate();
-  const uploadedBrochureUrl = useQuery(api.documents.getBrochure);
-  // Fallback to the uploaded static PDF (URL-encoded since filename has spaces/#)
-  const brochureUrl = uploadedBrochureUrl || "/Prerana%20Sponsorship%20Brochure%23Basic.pdf";
+  // Use the uploaded brochure in /public directly
+  const brochureUrl = "/Prerana%20Sponsorship%20Brochure%23Basic.pdf";
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans relative overflow-hidden">
