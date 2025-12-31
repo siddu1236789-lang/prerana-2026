@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { Download } from "lucide-react";
 export default function Sponsors() {
   const navigate = useNavigate();
-  // Use the uploaded brochure in /public directly
-  const brochureUrl = "/Prerana%20Sponsorship%20Brochure%23Basic.pdf";
+  // Use the uploaded brochure in /public directly (renamed to safe filename)
+  const brochureUrl = "/Prerana-Sponsorship-Brochure-Basic.pdf";
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans relative overflow-hidden">
