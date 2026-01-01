@@ -24,11 +24,11 @@ export default function About() {
             <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">Prerana 2026: <span className="italic font-normal">The Spectrum Within</span></h3>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-4 text-center">
-              Prerana, the most anticipated annual fest of GITAM Bengaluru, is a grand celebration of the fusion of culture, technology, and wellness. Recognised as the top 25 cultural fest of Bengaluru in 2025 by the Bengaluru Cultural Fest Club, the flagship fest has returned this year with renewed energy, enthusiasm, new ideas, and collaboration from fresh minds, promising to deliver a one-of-a-kind experience to students.
+              Prerana, the most anticipated annual fest of GITAM Bengaluru, is a grand celebration of the fusion of Technology, Culture, and Wellness. Recognised as the top 25 cultural fest of Bengaluru in 2025 by the Bengaluru Cultural Fest Club, the flagship fest has returned this year with renewed energy, enthusiasm, new ideas, and collaboration from fresh minds, promising to deliver a one-of-a-kind experience to students.
             </p>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-4 text-center">
-              This year's theme <span className="font-bold">, Innovation, Collaboration, Hope, delves into</span><span className="italic font-normal">“The Spectrum Within”</span>, an exploration of the diverse strengths, skills, and qualities that exist within every student, celebrating each one. From the visionaries and innovators to the artists, tech enthusiasts, and empaths of GITAM, Prerana recognises and cherishes your uniqueness, providing a platform to express your true self.
+              This year's theme <span className="font-bold"> Innovation, Collaboration, Hope, delves into</span><span className="italic font-normal">“The Spectrum Within”</span>, an exploration of the diverse strengths, skills, and qualities that exist within every student, celebrating each one. From the visionaries and innovators to the artists, tech enthusiasts, and empaths of GITAM, Prerana recognises and cherishes your uniqueness, providing a platform to express your true self.
             </p>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-4 text-center">
