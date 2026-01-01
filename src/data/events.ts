@@ -29,13 +29,13 @@ export const events: Event[] = [
     title: "PROJECT EXPO",
     code: "TECH01",
     category: "Technical",
-    shortDescription: "A multi-domain technical exhibition showcasing innovative projects.",
-    fullDescription: "A multi-domain technical exhibition where students present hardware prototypes, software solutions, and research-driven innovations showcasing creativity and engineering impact.",
+    shortDescription: "Showcasing Innovation Across Domains.",
+    fullDescription: "A comprehensive technical exhibition where students present hardware prototypes, software systems, and research-driven projects that demonstrate innovation, creativity, and engineering excellence.",
     location: "Innovation Street(Venture Development Centre)",
     teamSize: "1–4 members",
     eligibility: "Open to all departments",
-    registrationFee: "Free (per team)",
-    prizes: ["1st Prize: ₹6,000", "2nd Prize: ₹4,000"],
+    registrationFee: "Free (Per team)",
+    prizes: ["Prize: ₹10,000"],
     guidelines: [
       "Open to all departments.",
       "Prototypes and concept models are allowed. ",
@@ -67,10 +67,10 @@ export const events: Event[] = [
     title: "MAZE FINDER MOUSE",
     code: "TECH02",
     category: "Technical",
-    shortDescription: "Autonomous bots race to solve a maze using sensors and logic.",
-    fullDescription: "Autonomous bots race to solve a maze using sensors, navigation logic, and pathfinding algorithms.",
+    shortDescription: "Intelligence in Motion.",
+    fullDescription: "An exciting competition where autonomous robots navigate complex mazes using sensor data, real-time decision making, and optimized pathfinding algorithms.",
     location: " KOJO (Venture Development Centre)  ",
-    teamSize: "1–3 members",
+    teamSize: "1–2 members",
     eligibility: "Autonomous robots only",
     registrationFee: "₹149 (per team)",
     prizes: ["Goodies"],
@@ -101,13 +101,13 @@ export const events: Event[] = [
     title: "HACKATHON (8-HOUR SPRINT)",
     code: "TECH03",
     category: "Technical",
-    shortDescription: "Build a working prototype in 8 hours.",
+    shortDescription: "Innovation Under Pressure.",
     fullDescription: "A fast-paced hackathon where teams build a working prototype in 8 hours. Theme revealed on the spot.",
     location: "Alpha, Beta, Gamma(Venture Development Centre)",
     teamSize: "2–4 members",
     eligibility: "Team participation only",
     registrationFee: "free (per team)",
-    prizes: ["1st Prize: ₹8,000", "2nd Prize: ₹5,000"],
+    prizes: ["Prize Pool: ₹13,000"],
     guidelines: [
       "Problem statement revealed at the start; no pre-built work or plagiarism allowed.",
       "Internet allowed only for reference/documentation. ",
@@ -141,7 +141,7 @@ export const events: Event[] = [
     teamSize: "1–3 members",
     eligibility: "Open to all",
     registrationFee: "₹449 (per team)",
-    prizes: ["1st Prize: ₹4,000", "2nd Prize: ₹2,000", "Additional Awards: Best Game Award, Best Creativity Award, Audience Choice Award"],
+    prizes: ["Prize Pool: ₹6,000", "Additional Awards: Best Game Award, Best Creativity Award, Audience Choice Award"],
     guidelines: [
       "Theme will be revealed during the event",
       "Any game engine may be used",
@@ -207,7 +207,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹299",
-    prizes: ["1st Prize: ₹1,500", "2nd Prize: ₹1,000"],
+    prizes: ["Prize Pool: ₹2,500"],
     guidelines: [
       "Only Indian dance forms allowed",
       "Vulgar choreography is strictly prohibited",
@@ -234,7 +234,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹299",
-    prizes: ["1st Prize: ₹1,500", "2nd Prize: ₹1,000"],
+    prizes: ["Prize Pool: ₹2,500"],
     guidelines: [
       "Any western dance style allowed",
       "Vulgar songs or choreography not permitted",
@@ -260,7 +260,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹249",
-    prizes: ["1st Prize: ₹1,500", "2nd Prize: ₹1,000"],
+    prizes: ["Prize Pool : ₹2,500"],
     guidelines: [
       "Dance style will be given on the spot",
       "Only music provided by organizers will be used",
@@ -286,7 +286,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹399",
-    prizes: ["1st Prize: ₹3,000", "2nd Prize: ₹1,500"],
+    prizes: ["Prize Pool: ₹4,500"],
     guidelines: [
       "Any dance style allowed",
       "Vulgar or inappropriate choreography not allowed",
@@ -312,7 +312,7 @@ export const events: Event[] = [
     teamSize: "4–6 members",
     eligibility: "Open to all",
     registrationFee: "₹599",
-    prizes: ["1st Prize: ₹5,000", "2nd Prize: ₹3,000"],
+    prizes: ["Prize Pool: ₹13,000"],
     guidelines: [
       "Only Indian classical dance forms",
       "Traditional costumes preferred",
@@ -338,7 +338,7 @@ export const events: Event[] = [
     teamSize: "8–14 members",
     eligibility: "Open to all",
     registrationFee: "₹899",
-    prizes: ["1st Prize: ₹6,000", "2nd Prize: ₹4,000"],
+    prizes: ["Prize Pool: ₹10,000"],
     guidelines: [
       "Only western dance styles allowed",
       "Appropriate costumes mandatory",
@@ -364,7 +364,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
-    prizes: ["1st Prize: ₹1,500", "2nd Prize: ₹1,000"],
+    prizes: ["Prize Pool: ₹2,500"],
     guidelines: [
       "Songs of any language allowed",
       "Vulgar lyrics prohibited",
@@ -392,7 +392,7 @@ export const events: Event[] = [
     teamSize: "6–10 members",
     eligibility: "Open to all",
     registrationFee: "₹599 (per band)",
-    prizes: ["1st Prize: ₹5,000", "2nd Prize: ₹3,000"],
+    prizes: ["Prize Pool: ₹8,000"],
     guidelines: [
       "All music genres allowed",
       "Vulgar content strictly prohibited",
@@ -418,7 +418,7 @@ export const events: Event[] = [
     teamSize: "Varies",
     eligibility: "Open to all",
     registrationFee: "₹899",
-    prizes: ["1st Prize: ₹6,000", "2nd Prize: ₹4,000"],
+    prizes: ["Prize Pool: ₹10,000"],
     guidelines: [
       "Theme-based fashion show",
       "Proper coordination and presentation required",
@@ -443,7 +443,7 @@ export const events: Event[] = [
     teamSize: "10–12 members",
     eligibility: "Open to all",
     registrationFee: "₹699",
-    prizes: ["1st Prize: ₹5,000", "2nd Prize: ₹3,000"],
+    prizes: ["Prize Pool: ₹8,000"],
     guidelines: [
       "Theme-based performance",
       "Offensive content not allowed",
@@ -468,7 +468,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Single performer only",
     registrationFee: "₹149",
-    prizes: ["1st Prize: ₹1,500", "2nd Prize: ₹1,000"],
+    prizes: ["1st Prize: ₹2,500"],
     guidelines: [
       "Solo stage performance",
       "Vulgar content prohibited",
@@ -493,7 +493,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
-    prizes: ["1st Prize: ₹1,500", "2nd Prize: ₹1,000"],
+    prizes: ["1st Prize: ₹2,500"],
     guidelines: [
       "No reading from paper or phone",
       "Original narration only",
@@ -518,7 +518,7 @@ export const events: Event[] = [
     teamSize: "",
     eligibility: "Open to all",
     registrationFee: "₹249",
-    prizes: ["1st Prize: ₹1,500", "2nd Prize: ₹1,000"],
+    prizes: ["Prize Pool: ₹2,500"],
     guidelines: [
       "No theme",
       "Only original content allowed",
@@ -544,7 +544,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
-    prizes: ["1st Prize: ₹1,000", "2nd Prize: ₹500"],
+    prizes: ["1st Prize: ₹1,500"],
     guidelines: [
       "Original content only",
       "Plagiarism leads to disqualification",
@@ -568,7 +568,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
-    prizes: ["1st Prize: ₹1,000", "2nd Prize: ₹500"],
+    prizes: ["1st Prize: ₹1,500"],
     guidelines: [
       "Individual participation only",
       "Sketch must be hand-drawn",
@@ -596,7 +596,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
-    prizes: ["1st Prize: ₹1,000", "2nd Prize: ₹500"],
+    prizes: ["Prize Pool: ₹2,500"],
     guidelines: [
       "One photo per participant",
       "Theme-based photography",
@@ -621,7 +621,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
-    prizes: ["1st Prize: ₹1,000", "2nd Prize: ₹500"],
+    prizes: ["1st Prize: ₹1,500"],
     guidelines: [
       "Individual participation",
       "Topic will be given on the spot",
@@ -650,7 +650,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
-    prizes: ["1st Prize: ₹1,000", "2nd Prize: ₹500"],
+    prizes: ["1st Prize: ₹1,500"],
     guidelines: [
       "Individual participation",
       "Poster must be digitally designed",
@@ -679,7 +679,7 @@ export const events: Event[] = [
     teamSize: "1–3 members",
     eligibility: "Open to all",
     registrationFee: "₹199",
-    prizes: ["1st Prize: ₹1,500", "2nd Prize: ₹1,000"],
+    prizes: ["Prize Pool: ₹2,500"],
     guidelines: [
       "Topic will be given on the spot.",
       "Prepare and present a 2–3 minute podcast live.",
