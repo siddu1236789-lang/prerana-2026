@@ -56,7 +56,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold mb-1">Call Us</h3>
                     <p className="text-muted-foreground">+91 87928 98162</p>
-                    <p className="text-muted-foreground text-sm mt-1">Mon-Fri, 9:00 AM - 5:00 PM</p>
+                    <p className="text-muted-foreground text-sm mt-1">Mon-Fri, 9:00 AM - 7:00 PM</p>
                   </div>
                 </div>
 

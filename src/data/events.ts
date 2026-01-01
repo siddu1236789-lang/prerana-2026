@@ -34,7 +34,7 @@ export const events: Event[] = [
     location: "Innovation Street(Venture Development Centre)",
     teamSize: "1–4 members",
     eligibility: "Open to all departments",
-    registrationFee: "Free (Per team)",
+    registrationFee: "Free (Per Team)",
     prizes: ["Prize: ₹10,000"],
     guidelines: [
       "Open to all departments.",
@@ -72,7 +72,7 @@ export const events: Event[] = [
     location: " KOJO (Venture Development Centre)  ",
     teamSize: "1–2 members",
     eligibility: "Autonomous robots only",
-    registrationFee: "₹149 (per team)",
+    registrationFee: "₹149 (Per Team)",
     prizes: ["Goodies"],
     guidelines: [
       "Robot must be fully autonomous with a maximum size of  25 × 25 × 25 cm.",
@@ -102,11 +102,11 @@ export const events: Event[] = [
     code: "TECH03",
     category: "Technical",
     shortDescription: "Innovation Under Pressure.",
-    fullDescription: "A fast-paced hackathon where teams build a working prototype in 8 hours. Theme revealed on the spot.",
+    fullDescription: "A time-bound hackathon where teams develop a working prototype in 8 hours based on an on-the-spot theme.",
     location: "Alpha, Beta, Gamma(Venture Development Centre)",
     teamSize: "2–4 members",
     eligibility: "Team participation only",
-    registrationFee: "free (per team)",
+    registrationFee: "Free (Per Team)",
     prizes: ["Prize Pool: ₹13,000"],
     guidelines: [
       "Problem statement revealed at the start; no pre-built work or plagiarism allowed.",
@@ -140,7 +140,7 @@ export const events: Event[] = [
     location: "- Vishveshwara Bhavan (VB)-501",
     teamSize: "1–3 members",
     eligibility: "Open to all",
-    registrationFee: "₹449 (per team)",
+    registrationFee: "₹449 (Per Team)",
     prizes: ["Prize Pool: ₹6,000", "Additional Awards: Best Game Award, Best Creativity Award, Audience Choice Award"],
     guidelines: [
       "Theme will be revealed during the event",
@@ -179,7 +179,7 @@ export const events: Event[] = [
     registrationFee: "₹399",
     prizes: ["Certificate of Participation"],
     guidelines: [
-      "inter-college participation allowed (18+ for pilot license training).",
+      "inter-college participation allowed.",
       "Trainer instructions must be followed strictly.",
       "Trainer instructions must be followed strictly.",
       "Touching powered propellers is not allowed. Damage due to misuse may incurpenalty."
