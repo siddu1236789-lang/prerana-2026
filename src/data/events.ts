@@ -31,18 +31,17 @@ export const events: Event[] = [
     category: "Technical",
     shortDescription: "A multi-domain technical exhibition showcasing innovative projects.",
     fullDescription: "A multi-domain technical exhibition where students present hardware prototypes, software solutions, and research-driven innovations showcasing creativity and engineering impact.",
-    location: "Innovation Street(Venture Development Centre)",
+    location: "VDC Innovation Street",
     teamSize: "1–4 members",
     eligibility: "Open to all departments",
     registrationFee: "Free (per team)",
     prizes: ["1st Prize: ₹6,000", "2nd Prize: ₹4,000"],
     guidelines: [
-      "Open to all departments.",
-      "Prototypes and concept models are allowed. ",
+      "Working or prototype models allowed",
+      "Declare power/equipment needs",
       "Setup must be completed 30 minutes before judging",
-      "One table, power socket, and poster board provided; setup 30 minutes early.",
-      "No hazardous chemicals or unsafe equipment allowed. ",
-      "Explain problem, method, innovation, and impact",
+      "No hazardous or unsafe materials",
+      "All equipment must be safe",
       "Judges' decision is final"
     ],
     judgingCriteria: [
@@ -60,7 +59,7 @@ export const events: Event[] = [
     active: true,
     slug: "project-expo",
     day: "Day 1 - (22-Jan-2026)",
-    time: " 11:00 am to 4:00 pm "
+    time: "10:00 AM - 04:00 PM"
   },
   {
     id: "tech02",
@@ -69,16 +68,16 @@ export const events: Event[] = [
     category: "Technical",
     shortDescription: "Autonomous bots race to solve a maze using sensors and logic.",
     fullDescription: "Autonomous bots race to solve a maze using sensors, navigation logic, and pathfinding algorithms.",
-    location: " KOJO (Venture Development Centre)  ",
+    location: "VDC (KOJO)",
     teamSize: "1–3 members",
     eligibility: "Autonomous robots only",
     registrationFee: "₹149 (per team)",
     prizes: ["Goodies"],
     guidelines: [
-      "Robot must be fully autonomous with a maximum size of  25 × 25 × 25 cm.",
-      "Bot must reach exit without human intervention.",
-      "Wall touch incurs a 1-second penalty; if stuck for over 10 seconds, a reset is allowed. ",
-      "Judges’ decision will be final."
+      "Bot size and specs will be announced",
+      "Bot must navigate independently (no remote control)",
+      "Touching walls = penalty (TBA)",
+      "Fastest successful run wins"
     ],
     judgingCriteria: [
       "Completion time",
@@ -94,7 +93,7 @@ export const events: Event[] = [
     active: true,
     slug: "maze-finder-mouse",
     day: "Day 2 - (23-Jan-2026)",
-    time: "12:00 pm to 1:00 pm"
+    time: "02:00 PM - 04:00 PM"
   },
   {
     id: "tech03",
@@ -103,16 +102,18 @@ export const events: Event[] = [
     category: "Technical",
     shortDescription: "Build a working prototype in 8 hours.",
     fullDescription: "A fast-paced hackathon where teams build a working prototype in 8 hours. Theme revealed on the spot.",
-    location: "Alpha, Beta, Gamma(Venture Development Centre)",
+    location: "VDC (Alpha, Beta, Gamma)",
     teamSize: "2–4 members",
     eligibility: "Team participation only",
     registrationFee: "free (per team)",
     prizes: ["1st Prize: ₹8,000", "2nd Prize: ₹5,000"],
     guidelines: [
-      "Problem statement revealed at the start; no pre-built work or plagiarism allowed.",
-      "Internet allowed only for reference/documentation. ",
-      "Working prototype and short pitch required. ",
-      "Code must be shared with judges; mentor check-ins are mandatory and judges’ decision is final.",    ],
+      "Theme/problem statement revealed at start",
+      "No pre-built code or projects",
+      "Internet allowed for reference only",
+      "Mandatory submission: Working Prototype, Code (GitHub / ZIP), 3–5 minute pitch presentation",
+      "Mandatory mentor check-ins"
+    ],
     judgingCriteria: [
       "Problem-solving approach",
       "Innovation",
@@ -128,7 +129,7 @@ export const events: Event[] = [
     active: true,
     slug: "hackathon",
     day: "Day 2 - (23-Jan-2026)",
-    time: " 9:00 am to 5:00 pm "
+    time: "09:00 AM - 05:00 PM"
   },
   {
     id: "tech04",
@@ -137,17 +138,16 @@ export const events: Event[] = [
     category: "Technical",
     shortDescription: "Design and build a playable game on a surprise theme.",
     fullDescription: "Participants design and build a playable game based on a theme revealed during the event.",
-    location: "- Vishveshwara Bhavan (VB)-501",
+    location: "VB - 501",
     teamSize: "1–3 members",
     eligibility: "Open to all",
     registrationFee: "₹449 (per team)",
     prizes: ["1st Prize: ₹4,000", "2nd Prize: ₹2,000", "Additional Awards: Best Game Award, Best Creativity Award, Audience Choice Award"],
     guidelines: [
-      "Theme will be revealed during the event",
-      "Any game engine may be used",
-      "Only original or royalty-free assets are allowed.",
-      "Game must have at least one playable level. ",
-      "Submission must include game build, screenshots,and concept explanation. Judges’ decision will be final."
+      "Game must be developed within the given time",
+      "Only original work allowed (no plagiarised or pre-made games)",
+      "Submission must include: Game build, Screenshots, Concept explanation",
+      "Must include at least one playable level"
     ],
     judgingCriteria: [
       "Gameplay",
@@ -164,7 +164,7 @@ export const events: Event[] = [
     active: true,
     slug: "gamethon",
     day: "Day 1 - (22-Jan-2026)",
-    time: " 10:30 am to 1:30 pm "
+    time: "10:00 AM - 02:00 PM"
   },
   {
     id: "tech05",
@@ -173,16 +173,16 @@ export const events: Event[] = [
     category: "Technical",
     shortDescription: "Certified workshop on UAV mechanics and safe drone operation.",
     fullDescription: "A certified workshop covering UAV mechanics, safe drone operation, and flight training. Participation-based workshop (no evaluation).",
-    location: " Vishveshwara Bhavan (VB) 203",
+    location: "VB - 203",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹399",
     prizes: ["Certificate of Participation"],
     guidelines: [
-      "inter-college participation allowed (18+ for pilot license training).",
-      "Trainer instructions must be followed strictly.",
-      "Trainer instructions must be followed strictly.",
-      "Touching powered propellers is not allowed. Damage due to misuse may incurpenalty."
+      "Follow trainer instructions",
+      "Fly only in designated zones",
+      "Do not touch propellers when active",
+      "Safety rules must be followed"
     ],
     judgingCriteria: [],
     disqualificationRules: [
@@ -193,7 +193,7 @@ export const events: Event[] = [
     active: true,
     slug: "drone-workshop",
     day: "Day 2 - (23-Jan-2026)",
-    time: "11:00 am to 4:00 pm "
+    time: "02:00 PM - 03:00 PM"
   },
   // CULTURAL EVENTS
   {
@@ -203,7 +203,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Showcase your talent in Indian dance forms.",
     fullDescription: "A solo dance competition dedicated to Indian dance forms.",
-    location: "Shivaji Bhavan (SB) Auditorium",
+    location: "Auditorium",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹299",
@@ -221,7 +221,8 @@ export const events: Event[] = [
     active: true,
     slug: "solo-dance-indian",
     day: "Day 2 - (23-Jan-2026)",
-    time: "10:00 am - 10:50 am",
+    time: "10:30 AM - 11:20 AM",
+    timeLimit: "2 + 1 minutes"
   },
   {
     id: "cul02",
@@ -230,7 +231,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Showcase your talent in Western dance styles.",
     fullDescription: "A solo dance competition dedicated to Western dance styles.",
-    location: "Shivaji Bhavan (SB) Auditorium",
+    location: "Auditorium",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹299",
@@ -247,7 +248,7 @@ export const events: Event[] = [
     active: true,
     slug: "solo-dance-western",
     day: "Day 2 - (23-Jan-2026)",
-    time: "12:00 pm to 1:00 pm"
+    timeLimit: "2 + 1 minutes"
   },
   {
     id: "cul03",
@@ -256,7 +257,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Improvise a dance routine on the spot.",
     fullDescription: "A dance challenge where participants must choreograph on the spot to provided music.",
-    location: "Shivaji Bhavan (SB) Auditorium",
+    location: "Auditorium",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹249",
@@ -273,7 +274,7 @@ export const events: Event[] = [
     active: true,
     slug: "spot-choreography",
     day: "Day 2 - (23-Jan-2026)",
-    time: " 1:00 pm to 1:45 pm"
+    timeLimit: "90 seconds"
   },
   {
     id: "cul04",
@@ -282,8 +283,8 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Perform a duet dance routine.",
     fullDescription: "A dance competition for pairs to showcase their coordination and talent.",
-    location: "Shivaji Bhavan (SB) Auditorium",
-    teamSize: "1",
+    location: "Auditorium",
+    teamSize: "2",
     eligibility: "Open to all",
     registrationFee: "₹399",
     prizes: ["1st Prize: ₹3,000", "2nd Prize: ₹1,500"],
@@ -299,7 +300,7 @@ export const events: Event[] = [
     active: true,
     slug: "duet-dance",
     day: "Day 2 - (23-Jan-2026)",
-    time: " 2:00 pm to 2:55 pm"
+    timeLimit: "3 + 1 minutes"
   },
   {
     id: "cul05",
@@ -308,7 +309,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Group performance of Indian dance forms.",
     fullDescription: "A group dance competition focusing on Indian classical and folk forms.",
-    location: "Shivaji Bhavan (SB) Auditorium",
+    location: "Auditorium",
     teamSize: "4–6 members",
     eligibility: "Open to all",
     registrationFee: "₹599",
@@ -325,7 +326,7 @@ export const events: Event[] = [
     active: true,
     slug: "group-dance-indian",
     day: "Day 2 - (23-Jan-2026)",
-    time: "10:55 am to 11:50 am"
+    timeLimit: "6 + 2 minutes"
   },
   {
     id: "cul06",
@@ -334,7 +335,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Group performance of Western dance styles.",
     fullDescription: "A group dance competition focusing on Western dance styles.",
-    location: "Shivaji Bhavan (SB) Auditorium",
+    location: "Auditorium",
     teamSize: "8–14 members",
     eligibility: "Open to all",
     registrationFee: "₹899",
@@ -351,7 +352,7 @@ export const events: Event[] = [
     active: true,
     slug: "group-dance-western",
     day: "Day 2 - (23-Jan-2026)",
-    time: " 3:00 pm to 4:00 pm"
+    timeLimit: "6 + 2 minutes"
   },
   {
     id: "cul07",
@@ -360,7 +361,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Showcase your vocal talent.",
     fullDescription: "A solo singing competition open to all languages.",
-    location: "Shivaji Bhavan (SB) Auditorium",
+    location: "Auditorium",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
@@ -378,7 +379,7 @@ export const events: Event[] = [
     active: true,
     slug: "solo-singing",
     day: "Day 1 - (22-Jan-2026)",
-    time: "10:30 AM - 11:30 AM",
+    time: "10:00 AM - 05:00 PM",
     timeLimit: "3 + 1 minutes"
   },
   {
@@ -388,8 +389,8 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Live band performance competition.",
     fullDescription: "A competition for bands to perform live music.",
-    location: "Shivaji Bhavan (SB) Auditorium",
-    teamSize: "6–10 members",
+    location: "Auditorium",
+    teamSize: "4–8 members",
     eligibility: "Open to all",
     registrationFee: "₹599 (per band)",
     prizes: ["1st Prize: ₹5,000", "2nd Prize: ₹3,000"],
@@ -405,7 +406,7 @@ export const events: Event[] = [
     active: true,
     slug: "battle-of-bands",
     day: "Day 1 - (22-Jan-2026)",
-    time: "11:00 AM - 12:40 PM"
+    time: "10:00 AM - 05:00 PM"
   },
   {
     id: "cul09",
@@ -414,13 +415,13 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Theme-based fashion walk and presentation.",
     fullDescription: "A fashion walk showcasing confidence, costume, choreography and presentation.",
-    location: "Shivaji Bhavan (SB) Auditorium",
+    location: "Auditorium",
     teamSize: "Varies",
     eligibility: "Open to all",
     registrationFee: "₹899",
     prizes: ["1st Prize: ₹6,000", "2nd Prize: ₹4,000"],
     guidelines: [
-      "Theme-based fashion show",
+      "Decent attire mandatory",
       "Proper coordination and presentation required",
       "Judges' decision will be final"
     ],
@@ -430,7 +431,7 @@ export const events: Event[] = [
     active: true,
     slug: "fashion-walk",
     day: "Day 1 - (22-Jan-2026)",
-    time: "01:00 PM - 02:20 PM"
+    time: "10:00 AM - 05:00 PM"
   },
   {
     id: "cul10",
@@ -439,14 +440,15 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Theatrical performance competition.",
     fullDescription: "A drama competition for teams to perform theme-based plays.",
-    location: "Shivaji Bhavan (SB) Auditorium",
-    teamSize: "10–12 members",
+    location: "Auditorium",
+    teamSize: "8–10 members",
     eligibility: "Open to all",
     registrationFee: "₹699",
     prizes: ["1st Prize: ₹5,000", "2nd Prize: ₹3,000"],
     guidelines: [
       "Theme-based performance",
       "Offensive content not allowed",
+      "Time limit: 8–10 minutes",
       "Judges' decision will be final"
     ],
     judgingCriteria: ["Acting", "Script", "Expressions", "Coordination"],
@@ -455,7 +457,8 @@ export const events: Event[] = [
     active: true,
     slug: "drama-competition",
     day: "Day 1 - (22-Jan-2026)",
-    time: "02:30 pm - 03:20 pm",
+    time: "10:00 AM - 05:00 PM",
+    timeLimit: "8–10 minutes"
   },
   {
     id: "cul11",
@@ -464,7 +467,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Solo acting performance.",
     fullDescription: "A solo acting competition to showcase dramatic skills.",
-    location: "Shivaji Bhavan (SB) Auditorium",
+    location: "Auditorium",
     teamSize: "1",
     eligibility: "Single performer only",
     registrationFee: "₹149",
@@ -480,7 +483,8 @@ export const events: Event[] = [
     active: true,
     slug: "mono-acting",
     day: "Day 1 - (22-Jan-2026)",
-    time: "03:20 pm - 4:00 pm",
+    time: "10:00 AM - 05:00 PM",
+    timeLimit: "3 + 1 minutes"
   },
   {
     id: "cul12",
@@ -489,7 +493,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Narrate an original story.",
     fullDescription: "A storytelling competition where participants narrate original stories.",
-    location: "Vishweshwara Bhavan (VB) 204",
+    location: "VB Classroom",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
@@ -505,8 +509,9 @@ export const events: Event[] = [
     active: true,
     slug: "story-telling",
     day: "Day 1 - (22-Jan-2026)",
-    time: "02:00 pm - 03:30pm",
-    },
+    time: "10:00 AM - 04:00 PM",
+    timeLimit: "6 + 2 minutes"
+  },
   {
     id: "cul13",
     title: "SHORT FILM MAKING",
@@ -514,14 +519,14 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Create a short film.",
     fullDescription: "A competition for aspiring filmmakers to showcase their short films.",
-    location: "Vishweshwara Bhavan (VB) - 203",
-    teamSize: "",
+    location: "VB - 203",
+    teamSize: "1–4 members",
     eligibility: "Open to all",
     registrationFee: "₹249",
     prizes: ["1st Prize: ₹1,500", "2nd Prize: ₹1,000"],
     guidelines: [
-      "No theme",
       "Only original content allowed",
+      "Maximum duration 10 minutes",
       "Judges' decision will be final"
     ],
     judgingCriteria: ["Storytelling", "Direction", "Editing", "Cinematography"],
@@ -530,7 +535,7 @@ export const events: Event[] = [
     active: true,
     slug: "short-film-making",
     day: "Day 1 - (22-Jan-2026)",
-    time: "10:30 AM - 11:30 AM",
+    time: "10:00 AM - 04:00 PM",
     timeLimit: "Max. 10 minutes"
   },
   {
@@ -540,7 +545,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Create a creative reel.",
     fullDescription: "A competition to create engaging short-form video content.",
-    location: "Vishweshwara Bhavan (VB) - 203",
+    location: "VB - 203",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
@@ -548,6 +553,7 @@ export const events: Event[] = [
     guidelines: [
       "Original content only",
       "Plagiarism leads to disqualification",
+      "Maximum duration 60 seconds",
       "Judges' decision will be final"
     ],
     judgingCriteria: ["Creativity", "Editing", "Message clarity"],
@@ -556,7 +562,9 @@ export const events: Event[] = [
     active: true,
     slug: "reel-contest",
     day: "Day 1 - (22-Jan-2026)",
-    time: "11:35 AM - 15:20 PM",  },
+    time: "10:00 AM - 04:00 PM",
+    timeLimit: "Max 60 seconds"
+  },
   {
     id: "cul15",
     title: "SKETCHING",
@@ -564,7 +572,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Hand-drawn sketching competition.",
     fullDescription: "A sketching competition where participants draw based on a theme.",
-    location: "Vishweshwara Bhavan (VB) - 204",
+    location: "VB Classroom",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
@@ -583,7 +591,7 @@ export const events: Event[] = [
     active: true,
     slug: "sketching",
     day: "Day 1  - (22-Jan-2026)",
-    time: "01:00 pm - 01:50pm"
+    timeLimit: "50 minutes"
   },
   {
     id: "cul16",
@@ -592,7 +600,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Theme-based photography contest.",
     fullDescription: "A photography competition to capture the best moments.",
-    location: "Vishweshwara Bhavan (VB) - 203",
+    location: "VB - 203",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
@@ -600,6 +608,7 @@ export const events: Event[] = [
     guidelines: [
       "One photo per participant",
       "Theme-based photography",
+      "Basic editing allowed",
       "Judges' decision will be final"
     ],
     judgingCriteria: ["Composition", "Creativity", "Theme relevance"],
@@ -608,7 +617,7 @@ export const events: Event[] = [
     active: true,
     slug: "photography-contest",
     day: "Day 2 - (23-Jan-2026)",
-    time: "10:00 am to 1:30 pm"
+    time: "10:00 AM - 02:00 PM"
   },
   {
     id: "cul17",
@@ -617,7 +626,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Write an original script.",
     fullDescription: "A creative writing competition for scripts.",
-    location: "Vishweshwara Bhavan (VB) - 205",
+    location: "VB Classroom",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
@@ -637,7 +646,7 @@ export const events: Event[] = [
     active: true,
     slug: "script-writing",
     day: "Day 2 - (23-Jan-2026)",
-    time: "2:00pm to 3:45 pm"
+    timeLimit: "1 hour 45 minutes"
   },
   {
     id: "cul18",
@@ -646,7 +655,7 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Digital poster design competition.",
     fullDescription: "A competition to design creative digital posters.",
-    location: "Vishweshwara Bhavan (VB) - 204",
+    location: "VB Classroom",
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
@@ -666,7 +675,7 @@ export const events: Event[] = [
     active: true,
     slug: "poster-making",
     day: "Day 2 - (23-Jan-2026)",
-    time: "11:00 am to 12:30 pm"
+    timeLimit: "90 minutes"
   },
   {
     id: "cul19",
@@ -675,16 +684,17 @@ export const events: Event[] = [
     category: "Cultural",
     shortDescription: "Creative presentation and speaking.",
     fullDescription: "A competition for creative presentation and public speaking.",
-    location: "Vishweshwara Bhavan (VB) - 501",
+    location: "VB Classroom",
     teamSize: "1–3 members",
     eligibility: "Open to all",
     registrationFee: "₹199",
     prizes: ["1st Prize: ₹1,500", "2nd Prize: ₹1,000"],
     guidelines: [
-      "Topic will be given on the spot.",
-      "Prepare and present a 2–3 minute podcast live.",
-      "Content must be original and engaging.",
-
+      "Only original and theme-relevant content is allowed",
+      "Participants must present clearly and confidently",
+      "The presentation must be well-structured and creative",
+      "Participants must answer the judges' questions on the spot",
+      "Strict adherence to time limits and discipline is mandatory",
       "Judges' decision will be final"
     ],
     judgingCriteria: [],
@@ -693,7 +703,7 @@ export const events: Event[] = [
     active: true,
     slug: "genspeak-studio",
     day: "Day 2 - (23-Jan-2026)",
-    time: "11:00 am to 12:30 pm"
+    timeLimit: "2–3 minutes"
   },
   // COMBO EVENTS
   {
@@ -803,7 +813,7 @@ export const events: Event[] = [
     code: "WELL01",
     category: "Wellness",
     shortDescription: "A vibrant, interactive expression wall designed to uplift the campus spirit.",
-    fullDescription: "Wall of Hope is a space that shares positive messages, dreams, and kindness, reminding people they are not alone even in difficult times, inspiring strength, unity, resilience, compassion, and courage, where every message becomes a light and together creates a caring community filled with optimism and hope for a brighter future.",
+    fullDescription: "A vibrant, interactive expression wall designed to uplift the campus spirit. Students can write motivational quotes, affirmations, gratitude notes, and personal hopes on colourful slips and pin them up. Over the course of the day, the wall transforms into a collective symbol of optimism and unity—showcasing hundreds of messages that reflect courage, emotional resilience, and mutual encouragement. Volunteers will be present to guide participants and capture standout moments for social media highlights.",
     location: "Gitam Lawn (opposite Vinay Sadan)",
     teamSize: "Open to all",
     eligibility: "Open to all",
@@ -815,8 +825,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "wall-of-hope",
-    day: "Day 1 - (22-Jan-2026)",
-    timeLimit: "Day 1: 10:30 AM – 04:00 PM"
+    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well02",
@@ -836,8 +846,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "fit-and-fine-desk",
-    day: "Day 1 - (22-Jan-2026)",
-    timeLimit: "Day 1: 10:30 AM – 04:00 PM "
+    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well03",
@@ -857,8 +867,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "fitness-fun-alley",
-    day: "Day 1 - (22-Jan-2026)",
-    timeLimit: "Day 1: 10:30 AM – 04:00 PM"
+    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well04",
@@ -878,12 +888,12 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "zen-zone",
-    day: "Day 1&2 - (22-Jan-2026 & 23-Jan-2026)",
-    time: "Day 1&2:  10:30 AM – 04:00 PM"
+    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well05",
-    title: "UDAAN RESOURCE CORNER ",
+    title: "RESOURCE CORNER (DAY 1 and 2)",
     code: "WELL05",
     category: "Wellness",
     shortDescription: "Information desk for counseling and wellness resources.",
@@ -900,7 +910,7 @@ export const events: Event[] = [
     active: true,
     slug: "resource-corner",
     day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
-    time: "Day 1: 10:30 AM – 04:00 PM & Day 2:  10:00 AM – 04:00 PM "
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well06",
@@ -920,8 +930,8 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "clay-modelling-worry-stones",
-    day: "Day 2 - (23-Jan-2026)",
-    timeLimit: "Day 2: 0:00 AM – 12:00 PM "
+    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well07",
@@ -941,17 +951,17 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "make-me-smile-booth",
-    day: "Day 2 - (23-Jan-2026)",
-    timeLimit: "Day 2:  10:00 AM – 04:00 PM"
+    day: "Day 1 & 2 - (22-Jan-2026 & 23-Jan-2026)",
+    timeLimit: "Day 1: 10:00 AM – 04:00 PM; Day 2: 09:00 AM – 04:00 PM"
   },
   {
     id: "well08",
-    title: "Rise of Hope (Balloon Release) & Prerana Logo Formation",
+    title: "Prerana Formation and Rise of Hope Session",
     code: "WELL08",
     category: "Wellness",
     shortDescription: "Prerana logo formation.",
     fullDescription: "Participants will form the Prerana logo through human formation, symbolizing unity, teamwork, and togetherness. This will be followed by the release of helium balloons carrying symbolic messages, representing hope, positivity, and a strong collective spirit. The moment will be visually captured to mark the grand beginning of the fest.",
-    location: "Track",
+    location: "Gitam Lawn (opposite Vinay Sadan)",
     teamSize: "Individual",
     eligibility: "Open to all",
     registrationFee: "Free",
@@ -967,7 +977,7 @@ export const events: Event[] = [
   },
   {
     id: "well09",
-    title: "Art Therapy Corner",
+    title: "Therapeutic Art",
     code: "WELL09",
     category: "Wellness",
     shortDescription: "Creative healing activity.",
@@ -982,8 +992,8 @@ export const events: Event[] = [
     disqualificationRules: [],
     requiresPayment: false,
     active: true,
-    slug: "art-therapy-corner",
+    slug: "therapeutic-art",
     day: "Day 2 - (23-Jan-2026)",
-    time: " 01:00 PM – 04:00 PM "
+    time: ""
   }
 ];
