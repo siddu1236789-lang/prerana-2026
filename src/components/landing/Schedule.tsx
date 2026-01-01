@@ -26,8 +26,7 @@ const staticSchedule = {
     { time: "02:00 PM – 03:30 PM", event: "Story Telling", category: "Cultural", location: "VB 204" },
     { time: "02:30 PM – 03:20 PM", event: "Drama Competition", category: "Cultural", location: "Auditorium" },
     { time: "03:20 PM – 04:00 PM", event: "Mono Acting", category: "Cultural", location: "Auditorium" },
-    { time: "04:00 PM – 05:30 PM", event: "Army Band Performance", category: "Cultural", location: "Main Stage" },
-    { time: "06:00 PM – 08:30 PM", event: "Band Performance with Artist", category: "Cultural", location: "Main Stage" },
+    { time: "06:00 PM – 08:30 PM", event: "Band Performance", category: "Cultural", location: "Main Stage" },
   ],
   day2: [
     { time: "09:30 AM – 10:00 AM", event: "Rise of Hope (Balloon Release) & Prerana Logo Formation", category: "Wellness", location: "Track" },

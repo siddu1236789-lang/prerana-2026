@@ -28,7 +28,7 @@ export default function FAQ() {
             },
             {
               question: "What is the deadline for registration?",
-              answer: "Registrations remain open only during the official window: 10 December 2025 - 15 Jan 2026. Late entries will not be accepted under any circumstances."
+              answer: "Registrations remain open only during the official window: . Late entries will not be accepted under any circumstances."
             },
             {
               question: "How do I confirm if my payment was successful?",
