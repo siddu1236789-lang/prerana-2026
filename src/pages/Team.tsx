@@ -6,33 +6,33 @@ import { motion } from "framer-motion";
 
 // Data Definitions
 const leadership = [
-  { name: "M. Thousheer", role: "President", image: "https://harmless-tapir-303.convex.cloud/api/storage/0a07c8e9-add2-4ef8-86d1-ae17ac4d6b98" },
-  { name: "Honalu K.G", role: "Vice President", image: "https://harmless-tapir-303.convex.cloud/api/storage/c21b0000-05c7-435d-9811-368948d34a30" },
-  { name: "Mokshagna", role: "Vice President", image: "https://harmless-tapir-303.convex.cloud/api/storage/74a3cfdc-1326-4617-9650-f8275a255fb9" },
+  { name: "M. Thousheer", role: "President", image: "/images/team/thoushier.jpg" },
+  { name: "Honalu K.G", role: "Vice President", image: "/images/team/honalu.jpg" },
+  { name: "Mokshagna", role: "Vice President", image: "/images/team/moksha.jpg" },
 ];
 
 const domainTeams = [
   {
     name: "Security",
     roles: [
-      { title: "Head", members: [{ name: "M.V. Sai Teja", image: "https://harmless-tapir-303.convex.cloud/api/storage/39123ec4-fe28-4c5c-bad0-ab2eb221bae2" }] },
-      { title: "Lead", members: [{ name: "Jaswanth Koduri", image: "https://harmless-tapir-303.convex.cloud/api/storage/e1b8d76d-0b0a-418d-a90d-fb58d4576b76" }, { name: "Spoorthi S", image: "https://harmless-tapir-303.convex.cloud/api/storage/fd14b4dc-b8fe-4185-b40f-3e72528d8d29" }] },
-      { title: "Co-Lead", members: [{ name: "K.B. Dhanush Tej", image: "https://harmless-tapir-303.convex.cloud/api/storage/06ffd6ea-8076-4458-ac5a-b76080fb52e4" }, { name: "Rupesh Koneti", image: "https://harmless-tapir-303.convex.cloud/api/storage/d2dd842d-108b-4107-b0a3-bd2e733d2011" }] },
+      { title: "Head", members: [{ name: "M.V. Sai Teja", image: "/images/team/sai.jpg" }] },
+      { title: "Lead", members: [{ name: "Jaswanth Koduri", image: "/images/team/jashwanth.jpg" }, { name: "Spoorthi S", image: "/images/team/spoorthi.jpg" }] },
+      { title: "Co-Lead", members: [{ name: "K.B. Dhanush Tej", image: "/images/team/dhanush.jpg" }, { name: "Rupesh Koneti", image: "/images/team/roopesh.jpg" }] },
     ]
   },
   {
     name: "Media",
     roles: [
-      { title: "Lead", members: [{ name: "G. Sai Krishna", image: "https://harmless-tapir-303.convex.cloud/api/storage/7fe2b617-067e-45a7-87d7-ab252708e8e2" }] },
-      { title: "Co-Lead", members: [{ name: "S MD Aasim", image: "https://harmless-tapir-303.convex.cloud/api/storage/857107d9-6045-43bc-ab47-e6b0033ae74b" }] },
+      { title: "Lead", members: [{ name: "G. Sai Krishna", image: "/images/team/sai krishna.jpg" }] },
+      { title: "Co-Lead", members: [{ name: "S MD Aasim", image: "/images/team/bade miyya.jpg" }] },
     ]
   },
   {
     name: "Design & Content",
     roles: [
-      { title: "Head", members: [{ name: "Venkata Vishnu", image: "https://harmless-tapir-303.convex.cloud/api/storage/b0b811e7-fc09-42c7-ad63-689fe542a0c8" }] },
-      { title: "Lead", members: [{ name: "Dhanunjay", image: "https://harmless-tapir-303.convex.cloud/api/storage/c6d2c2ac-a887-4e9a-9b74-8bf3ea04815a" }] },
-      { title: "Co-Lead", members: [{ name: "Sohitha", image: "https://harmless-tapir-303.convex.cloud/api/storage/abab97c5-fe9c-4ab6-89d6-62aec61afd47" }, { name: "Guru Sai", image: "/images/team/gurusai.jpg" }] },
+      { title: "Head", members: [{ name: "Venkata Vishnu", image: "/images/team/vishnu.jpg" }] },
+      { title: "Lead", members: [{ name: "Dhanunjay", image: "/images/team/leo.jpg" }] },
+      { title: "Co-Lead", members: [{ name: "Sohitha", image: "/images/team/sohitha.jpg" }, { name: "Guru Sai", image: "/images/team/guru sai.jpg" }] },
     ]
   },
   {
@@ -46,62 +46,62 @@ const domainTeams = [
   {
     name: "Events",
     roles: [
-      { title: "Head", members: [{ name: "B. Neha Reddy", image: "/images/team/neha-reddy.jpg" }] },
-      { title: "Lead", members: [{ name: "Rachel Smita", image: "https://harmless-tapir-303.convex.cloud/api/storage/0f0b0031-49bc-4b23-b9e0-83e21b0554d0" }] },
-      { title: "Co-Lead", members: [{ name: "Lanka Darshini Raj", image: "https://harmless-tapir-303.convex.cloud/api/storage/851a576e-08b8-4bd2-b360-793a2dab85c9" }, { name: "P. Yathin Bharadwaj", image: "https://harmless-tapir-303.convex.cloud/api/storage/1a77c08c-0a3c-4039-96a6-1fc5cd25f1fd" }] },
+      { title: "Head", members: [{ name: "B. Neha Reddy", image: "/images/team/neha.jpg" }] },
+      { title: "Lead", members: [{ name: "Rachel Smita", image: "/images/team/rachel.jpg" }] },
+      { title: "Co-Lead", members: [{ name: "Lanka Darshini Raj", image: "/images/team/darshani.jpg" }, { name: "P. Yathin Bharadwaj", image: "/images/team/yathin.jpg" }] },
     ]
   },
   {
     name: "Marketing",
     roles: [
-      { title: "Head", members: [{ name: "Apurva Mishra", image: "/images/team/apurva-mishra.jpg" }] },
-      { title: "Lead", members: [{ name: "Manoj Kumar", image: "/images/team/manoj.JPEG" }] },
-      { title: "Co-Lead", members: [{ name: "J. Riteesh Reddy", image: "/images/team/j-riteesh-reddy.jpg" }] },
+      { title: "Head", members: [{ name: "Apurva Mishra", image: "/images/team/apurva.jpg" }] },
+      { title: "Lead", members: [{ name: "Manoj Kumar", image: "/images/team/manoj.jpeg" }] },
+      { title: "Co-Lead", members: [{ name: "J. Riteesh Reddy", image: "/images/team/Riteesh.jpg" }] },
     ]
   },
   {
     name: "Operations",
     roles: [
-      { title: "Head", members: [{ name: "S Ruthish Reddy", image: "/images/team/singareddy-ruthish-reddy.jpg" }] },
-      { title: "Lead", members: [{ name: "P. Joel Michael Son", image: "/images/team/p-joel-michael-son.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "Allata Harshita", image: "/images/team/allata-harshita.jpg" }] },
+      { title: "Head", members: [{ name: "S Ruthish Reddy", image: "/images/team/rutheeish.jpg" }] },
+      { title: "Lead", members: [{ name: "P. Joel Michael Son", image: "/images/team/Michael.jpg" }] },
+      { title: "Co-Lead", members: [{ name: "Allata Harshita", image: "/images/team/harshitha.jpg" }] },
     ]
   },
   {
     name: "Sponsorship",
     roles: [
-      { title: "Head", members: [{ name: "K. Sriniwas", image: "/images/team/k-sriniwas.jpg" }] },
-      { title: "Lead", members: [{ name: "Sumanth Reddy S", image: "/images/team/sumanth-reddy-s.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "Srishti Sucklecha", image: "/images/team/srishti-sucklecha.jpg" }] },
+      { title: "Head", members: [{ name: "K. Sriniwas", image: "/images/team/sriniwas.jpg" }] },
+      { title: "Lead", members: [{ name: "Sumanth Reddy S", image: "/images/team/sumanth.jpg" }] },
+      { title: "Co-Lead", members: [{ name: "Srishti Sucklecha", image: "/images/team/srishti.jpg" }] },
     ]
   },
   {
     name: "Hospitality",
     roles: [
-      { title: "Head", members: [{ name: "A. Jagadeesh", image: "/images/team/a-jagadeesh.jpg" }, { name: "Prakruthi V", image: "/images/team/prakruthi-v.jpg" }] },
+      { title: "Head", members: [{ name: "A. Jagadeesh", image: "/images/team/jagadeesh.jpg" }, { name: "Prakruthi V", image: "/images/team/prakruthi.jpg" }] },
       { title: "Lead", members: [{ name: "Prithvi Ganesh" }] },
-      { title: "Co-Lead", members: [{ name: "Sri Nandini T", image: "/images/team/sri-nandini-t.jpg" }, { name: "Vakul Kumar Bayya", image: "/images/team/vakul-kumar-bayya.jpg" }] },
+      { title: "Co-Lead", members: [{ name: "Sri Nandini T", image: "/images/team/nandini.jpg" }, { name: "Vakul Kumar Bayya", image: "/images/team/vakul.jpg" }] },
     ]
   },
   {
     name: "Legal & Documentation",
     roles: [
-      { title: "Head", members: [{ name: "Sophiya Sharma", image: "/images/team/sophiya-sharma.jpg" }] },
-      { title: "Lead", members: [{ name: "Hrishita Rauniyar", image: "/images/team/hrishita-rauniyar.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "Unnati Chari", image: "/images/team/unnati-chari.jpg" }] },
+      { title: "Head", members: [{ name: "Sophiya Sharma", image: "/images/team/sofiya.jpg" }] },
+      { title: "Lead", members: [{ name: "Hrishita Rauniyar", image: "/images/team/hrishita.jpg" }] },
+      { title: "Co-Lead", members: [{ name: "Unnati Chari", image: "/images/team/unnati.jpg" }] },
     ]
   },
 ];
 
 const advisoryCommittee = [
-  { name: "Dr. Reema Chaudhury", role: "mentor", image: "/images/team/Reema-Chaudhury.jpg" },
-  { name: "Dr. Asha Acharya", role: "Co-mentor", image: "/images/team/asha mam (1).jpg", subrole: "" },
-  { name: "Anitha D", role: "Senior Executive", image: "/images/team/anita mam (1).jpg" },
+  { name: "Dr. Reema Chaudhury", role: "mentor", image: "/images/team/reema.jpg" },
+  { name: "Dr. Asha Acharya", role: "Co-mentor", image: "/images/team/asha mam.jpg", subrole: "" },
+  { name: "Anitha D", role: "Senior Executive", image: "/images/team/anita mam.jpg" },
   { name: "Arjun Raghu", role: "Senior Executive", image: "/images/team/arjun sir.jpg" },
-  { name: "Pranav Amarnath", role: "Senior Executive ", image: "/images/team/pranav%20sir.png" },
-  { name: "Meghana Musku", role: "Senior Executive ", image: "/images/team/meghana%20mam.png" },
-  { name: "Srikanth Basavraj", role: "Senior Executive", image: "/images/team/srikanth sir (1).jpg" },
-  { name: "Rayanka Debnath", role: "Senior Executive", image: "/images/team/rayanka mam (1).jpg" },
+  { name: "Pranav Amarnath", role: "Senior Executive ", image: "/images/team/pranav sir.jpeg" },
+  { name: "Meghana Musku", role: "Senior Executive ", image: "/images/team/meghana mam.png" },
+  { name: "Srikanth Basavraj", role: "Senior Executive", image: "/images/team/srikanth sir.jpg" },
+  { name: "Rayanka Debnath", role: "Senior Executive", image: "/images/team/rayanka mam.jpg" },
   { name: "Ayush BM", role: "Executive - Visual Content", image: "/images/team/ayush-sir.jpg" },
 ];
 

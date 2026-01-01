@@ -21,6 +21,7 @@ export interface Event {
   timeLimit?: string;
   isCombo?: boolean;
   includedEvents?: string[];
+  coordinators?: { name: string; phone: string }[];
 }
 
 export const events: Event[] = [
@@ -43,7 +44,6 @@ export const events: Event[] = [
       "One table, power socket, and poster board provided; setup 30 minutes early.",
       "No hazardous chemicals or unsafe equipment allowed. ",
       "Explain problem, method, innovation, and impact",
-      "Judges' decision is final"
     ],
     judgingCriteria: [
       "Innovation",
@@ -70,7 +70,7 @@ export const events: Event[] = [
     shortDescription: "Intelligence in Motion.",
     fullDescription: "An exciting competition where autonomous robots navigate complex mazes using sensor data, real-time decision making, and optimized pathfinding algorithms.",
     location: " KOJO (Venture Development Centre)  ",
-    teamSize: "1–2 members",
+    teamSize: "1–3 members",
     eligibility: "Autonomous robots only",
     registrationFee: "₹149 (Per Team)",
     prizes: ["Goodies"],
@@ -78,7 +78,6 @@ export const events: Event[] = [
       "Robot must be fully autonomous with a maximum size of  25 × 25 × 25 cm.",
       "Bot must reach exit without human intervention.",
       "Wall touch incurs a 1-second penalty; if stuck for over 10 seconds, a reset is allowed. ",
-      "Judges’ decision will be final."
     ],
     judgingCriteria: [
       "Completion time",
@@ -112,7 +111,7 @@ export const events: Event[] = [
       "Problem statement revealed at the start; no pre-built work or plagiarism allowed.",
       "Internet allowed only for reference/documentation. ",
       "Working prototype and short pitch required. ",
-      "Code must be shared with judges; mentor check-ins are mandatory and judges’ decision is final.",    ],
+      "Code must be shared with judges; mentor check-ins are mandatory.",    ],
     judgingCriteria: [
       "Problem-solving approach",
       "Innovation",
@@ -147,7 +146,7 @@ export const events: Event[] = [
       "Any game engine may be used",
       "Only original or royalty-free assets are allowed.",
       "Game must have at least one playable level. ",
-      "Submission must include game build, screenshots,and concept explanation. Judges’ decision will be final."
+      "Submission must include game build, screenshots,and concept explanation."
     ],
     judgingCriteria: [
       "Gameplay",
@@ -210,10 +209,8 @@ export const events: Event[] = [
     prizes: ["Prize Pool: ₹2,500"],
     guidelines: [
       "Only Indian dance forms allowed",
-      "Vulgar choreography is strictly prohibited",
       "No fire, water, powder, or unsafe props",
       "Music to be submitted prior to the event",
-      "Judges' decision will be final"
     ],
     judgingCriteria: [],
     disqualificationRules: [],
@@ -237,9 +234,7 @@ export const events: Event[] = [
     prizes: ["Prize Pool: ₹2,500"],
     guidelines: [
       "Any western dance style allowed",
-      "Vulgar songs or choreography not permitted",
       "No dangerous props",
-      "Judges' decision will be final"
     ],
     judgingCriteria: [],
     disqualificationRules: [],
@@ -264,8 +259,6 @@ export const events: Event[] = [
     guidelines: [
       "Dance style will be given on the spot",
       "Only music provided by organizers will be used",
-      "Vulgarity will lead to disqualification",
-      "Judges' decision will be final"
     ],
     judgingCriteria: [],
     disqualificationRules: [],
@@ -289,9 +282,7 @@ export const events: Event[] = [
     prizes: ["Prize Pool: ₹4,500"],
     guidelines: [
       "Any dance style allowed",
-      "Vulgar or inappropriate choreography not allowed",
       "No fire, water, or unsafe props",
-      "Judges' decision will be final"
     ],
     judgingCriteria: [],
     disqualificationRules: [],
@@ -316,8 +307,6 @@ export const events: Event[] = [
     guidelines: [
       "Only Indian classical dance forms",
       "Traditional costumes preferred",
-      "Vulgarity leads to disqualification",
-      "Judges' decision will be final"
     ],
     judgingCriteria: [],
     disqualificationRules: [],
@@ -342,8 +331,6 @@ export const events: Event[] = [
     guidelines: [
       "Only western dance styles allowed",
       "Appropriate costumes mandatory",
-      "Vulgar choreography not allowed",
-      "Judges' decision will be final"
     ],
     judgingCriteria: [],
     disqualificationRules: [],
@@ -367,10 +354,7 @@ export const events: Event[] = [
     prizes: ["Prize Pool: ₹2,500"],
     guidelines: [
       "Songs of any language allowed",
-      "Vulgar lyrics prohibited",
       "Karaoke permitted",
-      "Time limit strictly followed",
-      "Judges' decision will be final"
     ],
     judgingCriteria: ["Voice quality", "Pitch", "Rhythm", "Stage presence"],
     disqualificationRules: [],
@@ -391,13 +375,11 @@ export const events: Event[] = [
     location: "Shivaji Bhavan (SB) Auditorium",
     teamSize: "6–10 members",
     eligibility: "Open to all",
-    registrationFee: "₹599 (per band)",
+    registrationFee: "₹599 (Per Band)",
     prizes: ["Prize Pool: ₹8,000"],
     guidelines: [
       "All music genres allowed",
-      "Vulgar content strictly prohibited",
       "Teams must bring their own instruments",
-      "Judges' decision will be final"
     ],
     judgingCriteria: ["Coordination", "Originality", "Sound quality", "Audience impact"],
     disqualificationRules: [],
@@ -415,14 +397,13 @@ export const events: Event[] = [
     shortDescription: "Theme-based fashion walk and presentation.",
     fullDescription: "A fashion walk showcasing confidence, costume, choreography and presentation.",
     location: "Shivaji Bhavan (SB) Auditorium",
-    teamSize: "Varies",
+    teamSize: "8–14 members",
     eligibility: "Open to all",
     registrationFee: "₹899",
     prizes: ["Prize Pool: ₹10,000"],
     guidelines: [
       "Theme-based fashion show",
       "Proper coordination and presentation required",
-      "Judges' decision will be final"
     ],
     judgingCriteria: ["Confidence", "Costume", "Walk", "Presentation"],
     disqualificationRules: [],
@@ -447,7 +428,6 @@ export const events: Event[] = [
     guidelines: [
       "Theme-based performance",
       "Offensive content not allowed",
-      "Judges' decision will be final"
     ],
     judgingCriteria: ["Acting", "Script", "Expressions", "Coordination"],
     disqualificationRules: [],
@@ -467,12 +447,11 @@ export const events: Event[] = [
     location: "Shivaji Bhavan (SB) Auditorium",
     teamSize: "1",
     eligibility: "Single performer only",
-    registrationFee: "₹149",
+    registrationFee: "₹149 (799 combo with Drama)",
     prizes: ["1st Prize: ₹2,500"],
     guidelines: [
       "Solo stage performance",
       "Vulgar content prohibited",
-      "Judges' decision will be final"
     ],
     judgingCriteria: ["Expressions", "Dialogue delivery", "Stage usage"],
     disqualificationRules: [],
@@ -497,7 +476,6 @@ export const events: Event[] = [
     guidelines: [
       "No reading from paper or phone",
       "Original narration only",
-      "Judges' decision will be final"
     ],
     judgingCriteria: ["Content", "Narration", "Voice modulation"],
     disqualificationRules: [],
@@ -522,7 +500,6 @@ export const events: Event[] = [
     guidelines: [
       "No theme",
       "Only original content allowed",
-      "Judges' decision will be final"
     ],
     judgingCriteria: ["Storytelling", "Direction", "Editing", "Cinematography"],
     disqualificationRules: [],
@@ -531,7 +508,6 @@ export const events: Event[] = [
     slug: "short-film-making",
     day: "Day 1 - (22-Jan-2026)",
     time: "10:30 AM - 11:30 AM",
-    timeLimit: "Max. 10 minutes"
   },
   {
     id: "cul14",
@@ -543,12 +519,11 @@ export const events: Event[] = [
     location: "Vishweshwara Bhavan (VB) - 203",
     teamSize: "1",
     eligibility: "Open to all",
-    registrationFee: "₹199",
+    registrationFee: "₹199 (349 combo withShort Film)",
     prizes: ["1st Prize: ₹1,500"],
     guidelines: [
       "Original content only",
       "Plagiarism leads to disqualification",
-      "Judges' decision will be final"
     ],
     judgingCriteria: ["Creativity", "Editing", "Message clarity"],
     disqualificationRules: [],
@@ -575,7 +550,6 @@ export const events: Event[] = [
       "Tracing or digital tools are not allowed",
       "Theme will be given on the spot",
       "Participants must bring their own materials",
-      "Judges' decision will be final"
     ],
     judgingCriteria: [],
     disqualificationRules: [],
@@ -600,7 +574,6 @@ export const events: Event[] = [
     guidelines: [
       "One photo per participant",
       "Theme-based photography",
-      "Judges' decision will be final"
     ],
     judgingCriteria: ["Composition", "Creativity", "Theme relevance"],
     disqualificationRules: [],
@@ -629,7 +602,6 @@ export const events: Event[] = [
       "Maximum length as specified during the event",
       "Use of mobile phones or internet is not allowed",
       "Plagiarism will lead to disqualification",
-      "Judges' decision will be final"
     ],
     judgingCriteria: [],
     disqualificationRules: [],
@@ -658,7 +630,6 @@ export const events: Event[] = [
       "Internet usage is not allowed during the competition",
       "Theme will be given on the spot",
       "Use of pre-made templates is not allowed",
-      "Judges' decision will be final"
     ],
     judgingCriteria: [],
     disqualificationRules: [],
@@ -684,8 +655,6 @@ export const events: Event[] = [
       "Topic will be given on the spot.",
       "Prepare and present a 2–3 minute podcast live.",
       "Content must be original and engaging.",
-
-      "Judges' decision will be final"
     ],
     judgingCriteria: [],
     disqualificationRules: [],
@@ -802,7 +771,7 @@ export const events: Event[] = [
     title: "WALL OF HOPE",
     code: "WELL01",
     category: "Wellness",
-    shortDescription: "A vibrant, interactive expression wall designed to uplift the campus spirit.",
+    shortDescription: "Students write motivating quotes, affirmations, and gratitude notes Creates a collective display of positivity and emotional strength.",
     fullDescription: "Wall of Hope is a space that shares positive messages, dreams, and kindness, reminding people they are not alone even in difficult times, inspiring strength, unity, resilience, compassion, and courage, where every message becomes a light and together creates a caring community filled with optimism and hope for a brighter future.",
     location: "Gitam Lawn (opposite Vinay Sadan)",
     teamSize: "Open to all",
@@ -823,7 +792,7 @@ export const events: Event[] = [
     title: "FIT & FINE DESK",
     code: "WELL02",
     category: "Wellness",
-    shortDescription: "A quick and friendly health screening station.",
+    shortDescription: "Quick physical wellness screening: BMI, BP, pulse, hydration awareness Basic posture check and mental wellness short check-ins.",
     fullDescription: "A quick and friendly health screening station where students can learn about their physical wellness. The stall includes BMI calculation, blood pressure checks, a pulse test, hydration awareness, and basic posture assessment. Alongside this, UDAAN representatives will provide short mental wellness check-in conversations, interpreting the results in a non-medical, supportive manner. Participants receive a small \"Wellness Score Card\" summarizing their readings and tips for daily self-care.",
     location: "Gitam Lawn (opposite Vinay Sadan)",
     teamSize: "Individual",
@@ -844,7 +813,7 @@ export const events: Event[] = [
     title: "FITNESS FUN ALLEY",
     code: "WELL03",
     category: "Wellness",
-    shortDescription: "A lively physical activity zone filled with energetic mini-challenges.",
+    shortDescription: "Energizing mini challenges: jump rope, planks, balance, wall sits etc.",
     fullDescription: "A lively physical activity zone filled with energetic mini-challenges. Students can try jump rope competitions, plank battles, balance tests, agility cones, wall sits, and step-up challenges. Each activity comes with fun prompts and timers to motivate friendly competition. Winners earn small wellness-themed badges or stickers. The Alley encourages movement, energizes the atmosphere, and brings a playful spirit to fitness.",
     location: "Gitam Lawn (opposite Vinay Sadan)",
     teamSize: "Individual",
@@ -865,7 +834,7 @@ export const events: Event[] = [
     title: "ZEN ZONE",
     code: "WELL04",
     category: "Wellness",
-    shortDescription: "A serene relaxation lounge for peace and mindfulness.",
+    shortDescription: "Calm relaxation space with soft lights, music, and a peaceful break from college stress.",
     fullDescription: "A serene relaxation lounge thoughtfully set up with soft mats, calming scents, ambient music, beanbags, and gentle lighting. The Zen Zone offers students a peaceful retreat amid the bustling event. Participants can try guided breathing exercises, short mindfulness prompts, or simply sit back and disconnect from stress. Journaling cards, affirmation decks, and grounding exercises are available for those seeking deeper reflection.",
     location: "Gitam Lawn (opposite Vinay Sadan)",
     teamSize: "Open to all",
@@ -886,7 +855,7 @@ export const events: Event[] = [
     title: "UDAAN RESOURCE CORNER ",
     code: "WELL05",
     category: "Wellness",
-    shortDescription: "Information desk for counseling and wellness resources.",
+    shortDescription: "Information on emotional support, counselling, crisis resources.",
     fullDescription: "An information desk providing details on counselling services, stress management, crisis helplines, and personal development resources. Trained volunteers guide students confidentially.",
     location: "Gitam Lawn (opposite Vinay Sadan)",
     teamSize: "Open to all",
@@ -904,10 +873,10 @@ export const events: Event[] = [
   },
   {
     id: "well06",
-    title: "CLAY MODELLING & WORRY STONE MAKING",
+    title: "Craft Your Calm",
     code: "WELL06",
     category: "Wellness",
-    shortDescription: "Therapeutic clay modelling and worry stone craft.",
+    shortDescription: "Hands-on clay moulding for relaxation and anxiety relief.",
     fullDescription: "Hands-on clay modelling and worry stone sessions focused on relaxation and creativity. No evaluation—therapeutic activity open to all.",
     location: "Gitam Lawn (opposite Vinay Sadan)",
     teamSize: "Individual",
@@ -921,14 +890,14 @@ export const events: Event[] = [
     active: true,
     slug: "clay-modelling-worry-stones",
     day: "Day 2 - (23-Jan-2026)",
-    timeLimit: "Day 2: 0:00 AM – 12:00 PM "
+    timeLimit: "Day 2: 10:00 AM – 12:00 PM "
   },
   {
     id: "well07",
     title: "MAKE ME SMILE BOOTH",
     code: "WELL07",
     category: "Wellness",
-    shortDescription: "A booth designed to bring smiles.",
+    shortDescription: "Fun kindness exchange: compliments, humor, happy prompts.",
     fullDescription: "A booth designed to bring smiles and spread happiness through simple interactions and activities.",
     location: "Gitam Lawn (opposite Vinay Sadan)",
     teamSize: "Open to all",
@@ -970,7 +939,7 @@ export const events: Event[] = [
     title: "Art Therapy Corner",
     code: "WELL09",
     category: "Wellness",
-    shortDescription: "Creative healing activity.",
+    shortDescription: "Mandala colouring, doodling boards, origami, watercolors.",
     fullDescription: "Therapeutic art is a creative healing activity that uses artistic expression to help individuals release emotions, manage stress, build self-awareness, and support mental and emotional well-being.",
     location: "Gitam Lawn (opposite Vinay Sadan)",
     teamSize: "Individual",
