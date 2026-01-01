@@ -80,13 +80,14 @@ function buildScheduleFromEvents() {
 
   // Trim events after headline items on each day
   const trimAfter = (arr: any[], matchTitle: string) => {
-    const idx = arr.findIndex(item => (item.event || "").toString().trim().toLowerCase() === matchTitle.toLowerCase());
+    // Use partial, case-insensitive match so variants like "Band Performance with Artist" are caught
+    const idx = arr.findIndex(item => (item.event || "").toString().trim().toLowerCase().includes(matchTitle.toLowerCase()));
     if (idx !== -1) {
       arr.splice(idx + 1);
     }
   };
 
-  trimAfter(sched.day1, "Band Performance with Artist");
+  trimAfter(sched.day1, "Band Performance");
   trimAfter(sched.day2, "DJ Night");
 
   return sched;
