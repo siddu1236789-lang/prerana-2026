@@ -29,7 +29,7 @@ const staticSchedule = {
     { time: "06:00 PM – 08:30 PM", event: "Band Performance", category: "Cultural", location: "Main Stage" },
   ],
   day2: [
-    { time: "09:30 AM – 10:00 AM", event: "Rise of Hope (Balloon Release) & Prerana Logo Formation", category: "Wellness", location: "Track" },
+    { time: "09:30 AM – 10:00 AM", event: "Rise of Hope (Balloon Release) & Prerana Logo Formation", category: "Ceremony", location: "Track" },
     { time: "09:00 AM – 05:00 PM", event: "Hackathon — 8 Hour Sprint", category: "Technical", location: "VDC (Alpha, Beta & Gamma)" },
     { time: "10:00 AM – 04:00 PM", event: "Wellness Zones", category: "Wellness", location: "Opposite to Vinaysadan Lawn" },
     { time: "10:00 AM – 10:50 AM", event: "Solo Dance (Indian)", category: "Cultural", location: "Auditorium" },
