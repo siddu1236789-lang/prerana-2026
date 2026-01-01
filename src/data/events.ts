@@ -878,7 +878,7 @@ export const events: Event[] = [
     requiresPayment: false,
     active: true,
     slug: "zen-zone",
-    day: "Day 1 - (22-Jan-2026)",
+    day: "Day 1&2 - (22-Jan-2026 & 23-Jan-2026)",
     time: "Day 1&2:  10:30 AM – 04:00 PM"
   },
   {
