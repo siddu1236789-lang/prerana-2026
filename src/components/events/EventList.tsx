@@ -53,7 +53,7 @@ export default function EventList({ category, events }: EventListProps) {
           <div className="grid md:grid-cols-2 gap-6">
             {comboEvents.map((event, index) => (
               <motion.div key={event.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.05 }}>
-                <Card onClick={() => navigate(`/events/${category}/${event.slug}`)} className={`h-full border-secondary/30 hover:border-secondary transition-all hover:shadow-lg hover:shadow-secondary/10 group bg-secondary/5 ${selectedEventId === event.id ? 'ring-2 ring-secondary/20' : ''}`}>
+                <Card onClick={() => toggleSelect(event.id)} className={`h-full border-secondary/30 hover:border-secondary transition-all hover:shadow-lg hover:shadow-secondary/10 group bg-secondary/5 cursor-pointer ${selectedEventId === event.id ? 'ring-2 ring-secondary/20' : ''}`}>
                   <CardHeader>
                     <div className="flex justify-between items-start mb-2">
                       <span className="text-xs font-mono text-secondary bg-secondary/10 px-2 py-1 rounded">{event.code}</span>
@@ -73,7 +73,7 @@ export default function EventList({ category, events }: EventListProps) {
                   <AnimatePresence>
                     {selectedEventId === event.id && (
                       <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.2 }} className="px-6 pb-6">
-                        <div className="text-sm text-muted-foreground">{event.fullDescription}</div>
+                        <div className="text-sm text-muted-foreground break-words">{event.fullDescription}</div>
                         <div className="mt-4 flex gap-3">
                           <Button size="sm" onClick={() => navigate(`/events/${category}/${event.slug}`)}>Know More</Button>
                           <Button size="sm" variant="outline" onClick={() => window.open(getFormUrl(event.category), '_blank')}>Register Now</Button>
@@ -120,7 +120,7 @@ export default function EventList({ category, events }: EventListProps) {
                   </CardContent>
 
                   <div className="px-6 pb-6">
-                    <div className="text-sm text-muted-foreground">{event.fullDescription}</div>
+                    <div className="text-sm text-muted-foreground break-words">{event.fullDescription}</div>
                     <div className="mt-4 flex gap-3">
                       <Button size="sm" onClick={() => navigate(`/events/${category}/${event.slug}`)}>Know More</Button>
                       <Button size="sm" variant="outline" onClick={() => window.open(getFormUrl(event.category), '_blank')}>Register Now</Button>

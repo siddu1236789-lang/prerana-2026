@@ -22,7 +22,7 @@ export default function Events() {
     : null;
 
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans relative overflow-hidden">
+    <div className="min-h-screen bg-background text-foreground font-sans relative">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl animate-pulse" />
