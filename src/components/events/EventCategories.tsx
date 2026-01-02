@@ -75,8 +75,8 @@ export default function EventCategories() {
               >
                 <Card className="h-full border-border/50 hover:border-primary/50 transition-colors">
                   <CardHeader className="flex flex-row items-center gap-4">
-                    <div className={`w-16 h-16 rounded-2xl ${cat.bg} flex items-center justify-center`}>
-                      <cat.icon className={`w-8 h-8 ${cat.color}`} />
+                    <div className={`${cat.slug === 'wellness' ? 'w-20 h-20' : 'w-16 h-16'} rounded-2xl ${cat.bg} flex items-center justify-center`}>
+                      <cat.icon className={`${cat.slug === 'wellness' ? 'w-12 h-12' : 'w-8 h-8'} ${cat.color}`} />
                     </div>
                     <div>
                       <CardTitle className="text-2xl">{cat.title}</CardTitle>

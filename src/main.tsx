@@ -16,10 +16,7 @@ import AuthPage from "./pages/Auth.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Register from "./pages/Register.tsx";
 import Events from "./pages/Events.tsx";
-import Gallery from "./pages/Gallery.tsx";
 import Sponsors from "./pages/Sponsors.tsx";
-import Privacy from "./pages/Privacy.tsx";
-import Terms from "./pages/Terms.tsx";
 import SecurityGuidelines from "./pages/SecurityGuidelines.tsx";
 import FAQ from "./pages/FAQ.tsx";
 import Team from "./pages/Team.tsx";
@@ -48,6 +45,16 @@ if (!convexUrl) {
   console.error("VITE_CONVEX_URL environment variable is not set. Please configure your .env file.");
 }
 const convex = new ConvexReactClient(convexUrl || "https://harmless-tapir-303.convex.cloud");
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function RouteSyncer() {
   const location = useLocation();
@@ -78,8 +85,9 @@ createRoot(document.getElementById("root")!).render(
     <InstrumentationProvider>
       <ConvexAuthProvider client={convex}>
         <BrowserRouter>
-          <RouteSyncer />
-          <ErrorBoundary>
+           <ScrollToTop />
+           <RouteSyncer />
+           <ErrorBoundary>
             <Routes>
               <Route path="/" element={<Landing />} />
               <Route path="/auth" element={<AuthPage redirectAfterAuth="/" />} />
@@ -94,13 +102,10 @@ createRoot(document.getElementById("root")!).render(
               <Route path="/events/:category" element={<Events />} />
               <Route path="/events/:category/:slug" element={<Events />} />
               <Route path="/schedule" element={<SchedulePage />} />
-              <Route path="/gallery" element={<Gallery />} />
               <Route path="/sponsors" element={<Sponsors />} />
               <Route path="/sponsors/partner-with-us" element={<Sponsors />} />
               <Route path="/team" element={<Team />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/privacy" element={<Privacy />} />
-              <Route path="/terms" element={<Terms />} />
               <Route path="/security-guidelines" element={<SecurityGuidelines />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/admin/brochure" element={<AdminBrochure />} />

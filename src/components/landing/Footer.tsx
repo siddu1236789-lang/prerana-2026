@@ -60,6 +60,16 @@ export default function Footer() {
                   Security Guidelines
                 </Link>
               </li>
+              <li>
+                <a
+                  href="https://www.gitam.edu/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  Privacy Policy
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -106,7 +116,7 @@ export default function Footer() {
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>&copy; 2026 Prerana Fest. All rights reserved.</p>
-          <p className="text-center">Developed by Team Technology</p>
+          <p className="text-center">Developed by Team Technology, Prerana</p>
           <div className="flex items-center gap-2">
              <span>Powered by</span>
              <a

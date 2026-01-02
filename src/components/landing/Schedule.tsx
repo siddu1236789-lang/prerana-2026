@@ -26,7 +26,7 @@ const staticSchedule = {
     { time: "02:00 PM – 03:30 PM", event: "Story Telling", category: "Cultural", location: "VB 204" },
     { time: "02:30 PM – 03:20 PM", event: "Drama Competition", category: "Cultural", location: "Auditorium" },
     { time: "03:20 PM – 04:00 PM", event: "Mono Acting", category: "Cultural", location: "Auditorium" },
-    { time: "06:00 PM – 08:30 PM", event: "Band Performance", category: "Cultural", location: "Main Stage" },
+    { time: "06:30 PM – 08:30 PM", event: "Band Performance", category: "Cultural", location: "Main Stage" },
   ],
   day2: [
     { time: "09:30 AM – 10:00 AM", event: "Rise of Hope (Balloon Release) & Prerana Logo Formation", category: "Ceremony", location: "Track" },
@@ -44,8 +44,8 @@ const staticSchedule = {
     { time: "02:00 PM – 03:45 PM", event: "Script Writting", category: "Cultural", location: "VB 205" },
     { time: "02:00 PM – 02:55 PM", event: "Duet Dance", category: "Cultural", location: "Auditorium" },
     { time: "03:00 PM – 04:00 PM", event: "Group Dance (Western)", category: "Cultural", location: "Auditorium" },
-    { time: "04:30 PM – 06:00 PM", event: "Club Performances", category: "Cultural", location: "Main Stage" },
-    { time: "06:00 PM – 08:30 PM", event: "DJ Night", category: "Cultural", location: "Main Stage" },
+    { time: "05:30 PM – 06:30 PM", event: "Club Performances", category: "Cultural", location: "Main Stage" },
+    { time: "06:30 PM – 08:30 PM", event: "DJ Night", category: "Cultural", location: "Main Stage" },
   ],
 };
 

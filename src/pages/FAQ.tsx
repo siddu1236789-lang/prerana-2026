@@ -20,10 +20,10 @@ export default function FAQ() {
           items: [
             {
               question: "How do I register for a specific event?",
-              answer: "All registrations regarding the competitions, workshops, and star-night passes are handled through an events register page. Select your event within the form and complete payment through GITAM Pay/G-Events."
+              answer: "All registrations regarding the competitions, workshops, and star-night passes are handled through an events register page. Select your event within the form and complete payment through Forms."
             },
             {
-              question: "Can students from outside GITAM participate?",
+              question: "Can students from other Universities participate?",
               answer: "Yes. External participants are welcome unless an event specifically restricts participation. Such restrictions will be clearly stated on the event's details page."
             },
             {
@@ -45,7 +45,7 @@ export default function FAQ() {
           items: [
             {
               question: "Is there an entry fee for the fest?",
-              answer: "Yes. A one-time Prerana Registration Fee is required for all attendees. This fee grants access to: The Prerana festival campus, All open daytime events, and Night Event / Star Night (no separate night-ticket required). Competitions and workshops still require additional, event-specific fees."
+              answer: "Yes. A one-time Prerana Registration Fee is required for all attendees. This fee grants access to: The Prerana festival campus, all open daytime events, and Night Event / Star Night (no separate night-ticket required). Competitions and workshops still require additional, event-specific fees."
             },
             {
               question: "What is the difference between the Prerana Registration Fee and Competition/Workshop Fees?",
@@ -61,7 +61,7 @@ export default function FAQ() {
             },
             {
               question: "Is the registration fee refundable?",
-              answer: "No. The one-time festival registration fee and all competition/workshop fees are non-refundable and non-transferable, except if an event is cancelled by the organisers."
+              answer: "No,the one-time festival registration fee and all competition/workshop fees are non-refundable and non-transferable, except if an event is cancelled by the organisers."
             },
             {
               question: "Is the night event included in my registration?",
@@ -69,11 +69,11 @@ export default function FAQ() {
             },
             {
               question: "Do competitions and workshops have separate fees?",
-              answer: "Yes. Every domain-specific event has its own independent registration page and fee. Your one-time fest registration does not cover competitions or workshops."
+              answer: "Yes, every domain-specific event has its own independent registration page and fee. Your one-time fest registration does not cover competitions or workshops."
             },
             {
               question: "Can I use my night-event access to enter competitions or workshops?",
-              answer: "No. Night-event access comes from the one-time registration fee only. Competitions and workshops require their own fees and registrations."
+              answer: "No, night-event access comes from the one-time registration fee only. Competitions and workshops require their own fees and registrations."
             }
           ]
         },
@@ -94,7 +94,7 @@ export default function FAQ() {
             },
             {
               question: "Where are the changing rooms or preparation areas?",
-              answer: "Designated prep areas will be assigned event-wise. Instructions will be communicated through coordinators on the day of the event."
+              answer: "Designated Preparation areas will be assigned event-wise. Instructions will be communicated through coordinators on the day of the event."
             },
             {
               question: "Will participants receive certificates?",
@@ -107,11 +107,11 @@ export default function FAQ() {
           items: [
             {
               question: "How do I reach the GITAM Bengaluru campus?",
-              answer: "Directions and a map are available on Google Maps. The address is listed clearly on the /contact page."
+              answer: "The address is listed clearly on the contact page."
             },
             {
               question: "Are food stalls available on campus?",
-              answer: "Yes. Multiple food stalls and vendors operate during the fest."
+              answer: "Yes, multiple food stalls and vendors operate during the fest."
             },
             {
               question: "Is Wi-Fi available for participants?",
@@ -119,7 +119,7 @@ export default function FAQ() {
             },
             {
               question: "Are first-aid facilities available?",
-              answer: "Yes. A medical station and trained personnel will be available throughout the fest."
+              answer: "Yes, a medical station and trained personnel will operate during the fest."
             },
             {
               question: "What are the general conduct rules on campus?",
@@ -132,7 +132,7 @@ export default function FAQ() {
           items: [
             {
               question: "Is accommodation available for outstation participants?",
-              answer: "Yes. Limited on-campus accommodation is available on a paid basis at ₹700 per night per person. Availability is first-come, first-served."
+              answer: "Yes, limited on-campus accommodation is available on a paid basis at ₹700 per night per person. Availability is first-come, first-served."
             },
             {
               question: "What items are allowed/not allowed in accommodation rooms?",
@@ -140,11 +140,11 @@ export default function FAQ() {
             },
             {
               question: "Is separate accommodation available for boys and girls?",
-              answer: "Yes. Accommodation arrangements follow GITAM University norms and are strictly gender-segregated."
+              answer: "Yes, accommodation arrangements follow GITAM University norms and are strictly gender-segregated."
             },
             {
               question: "Can external guests (non-participants) stay in the accommodation?",
-              answer: "No. Only registered participants with valid ID and accommodation booking are allowed."
+              answer: "No, only registered participants with valid ID and accommodation booking are allowed."
             }
           ]
         },
@@ -153,19 +153,19 @@ export default function FAQ() {
           items: [
             {
               question: "Do I need to carry an ID card?",
-              answer: "Yes. A valid college ID is mandatory for entry and verification."
+              answer: "Yes, a valid college ID is mandatory for entry and verification."
             },
             {
               question: "Are bag checks mandatory?",
-              answer: "Yes. Security screening is compulsory for all participants and visitors."
+              answer: "Yes, security screening is compulsory for all participants and visitors."
             },
             {
               question: "Are alcohol, cigarettes, or vapes allowed?",
-              answer: "Strictly no. Possession or consumption leads to immediate removal and possible disciplinary/legal action."
+              answer: "Strictly no, possession or consumption leads to immediate removal and possible disciplinary/legal action."
             },
             {
               question: "Is there a lost-and-found desk?",
-              answer: "Yes. A dedicated desk will operate during fest hours. Lost items can also be reported via prerana@gitam.in."
+              answer: "Yes, a dedicated desk will operate during fest hours. Lost items can also be reported via prerana@gitam.in."
             }
           ]
         },
@@ -208,7 +208,7 @@ export default function FAQ() {
             },
             {
               question: "Will refunds be issued if events are delayed due to weather?",
-              answer: "No. Weather-related changes do not qualify for refunds."
+              answer: "No, weather-related changes do not qualify for refunds."
             }
           ]
         },
@@ -221,7 +221,7 @@ export default function FAQ() {
             },
             {
               question: "Can I change or edit my registration after paying?",
-              answer: "No. Registrations cannot be modified once submitted."
+              answer: "No, registrations cannot be modified once submitted."
             }
           ]
         }
@@ -244,7 +244,7 @@ export default function FAQ() {
             },
             {
               question: "Do technical workshops have separate fees?",
-              answer: "Yes. Each workshop or competition has its own individual fee listed on the event detail page."
+              answer: "Yes, each workshop or competition has its own individual fee listed on the event detail page."
             }
           ]
         },
@@ -257,7 +257,7 @@ export default function FAQ() {
             },
             {
               question: "Can teams mix departments?",
-              answer: "Yes. Technical events are open to all departments unless specified otherwise."
+              answer: "Yes, technical events are open to all departments unless specified otherwise."
             },
             {
               question: "Are autonomous robots allowed in robotics events?",
@@ -270,7 +270,7 @@ export default function FAQ() {
           items: [
             {
               question: "Do I need to submit code before the Hackathon?",
-              answer: "No. Pre-built projects are strictly not allowed. Code must be created during the event."
+              answer: "No, pre-built projects are strictly not allowed. Code must be created during the event."
             },
             {
               question: "Is internet access provided during Hackathon?",
@@ -296,7 +296,7 @@ export default function FAQ() {
           items: [
             {
               question: "What causes disqualification in technical events?",
-              answer: "Use of prohibited materials, Pre-built projects (Hackathon), Unsafe robot designs, Tampering with equipment, Misbehavior with judges or volunteers."
+              answer: "Use of prohibited materials, pre-built projects (Hackathon), unsafe robot designs, tampering with equipment, misbehavior with judges or volunteers."
             }
           ]
         }
@@ -311,7 +311,7 @@ export default function FAQ() {
           items: [
             {
               question: "Do cultural events require separate fees?",
-              answer: "Yes. Each cultural competition has its own registration fee, listed clearly in the rulebook and event page."
+              answer: "Yes, each cultural competition has its own registration fee, listed clearly in the rulebook and event page."
             },
             {
               question: "Can I participate in multiple cultural events?",
@@ -319,7 +319,7 @@ export default function FAQ() {
             },
             {
               question: "Are accompanists allowed?",
-              answer: "Yes—allowed for dance and singing as per event rules (non-performing)."
+              answer: "Yes,allowed for dance and singing as per event rules (non-performing)."
             }
           ]
         },
@@ -332,11 +332,11 @@ export default function FAQ() {
             },
             {
               question: "Is background music allowed for Beatboxing?",
-              answer: "No. Beatboxing is strictly vocal only."
+              answer: "No, beatboxing is strictly vocal only."
             },
             {
               question: "Do I need to follow classical dress code for classical dance?",
-              answer: "Yes. Costume must match the classical art form."
+              answer: "Yes, costume must match the classical art form."
             }
           ]
         },
@@ -349,7 +349,7 @@ export default function FAQ() {
             },
             {
               question: "Are vulgar songs or themes allowed?",
-              answer: "Strictly no. Violations lead to immediate disqualification."
+              answer: "Strictly no, violations lead to immediate disqualification."
             },
             {
               question: "Are photography/short-film/reel entries allowed to use copyrighted music?",
@@ -362,11 +362,11 @@ export default function FAQ() {
           items: [
             {
               question: "How are cultural performances judged?",
-              answer: "Criteria include technique, choreography, expression, rhythm, creativity, storytelling, or visual appeal depending on event."
+              answer: " Criterias include technique, choreography, expression, rhythm, creativity, storytelling, or visual appeal depending on the event."
             },
             {
               question: "Are e-certificates provided?",
-              answer: "Yes. All cultural participants receive e-certificates."
+              answer: "Yes, all cultural participants will receive e-certificates."
             }
           ]
         },
@@ -407,15 +407,15 @@ export default function FAQ() {
           items: [
             {
               question: "Are wellness activities free?",
-              answer: "Most zones are walk-in. Workshops (like Clay Modelling) may require registration depending on crowd and materials."
+              answer: "Most wellness zones are walk-in. Workshops (like Clay Modelling) may require registration depending on crowd and materials."
             },
             {
               question: "Do I need the one-time Prerana registration to enter wellness zones?",
-              answer: "Yes. All Prerana zones require the one-time fest registration fee."
+              answer: "Yes, all Prerana zones require the one-time fest registration fee."
             },
             {
               question: "Are wellness events open to all departments?",
-              answer: "Yes. All students can join unless capacity is restricted."
+              answer: "Yes, all students can join unless capacity is restricted."
             }
           ]
         },
@@ -425,10 +425,6 @@ export default function FAQ() {
             {
               question: "Can I join the Zen Zone anytime?",
               answer: "Yes, it's designed as a walk-in quiet space."
-            },
-            {
-              question: "Is the Treasure Hunt a team event?",
-              answer: "Yes—team details will be mentioned on the event page."
             },
             {
               question: "Are materials provided for Art Therapy or Clay Modelling?",
@@ -441,7 +437,7 @@ export default function FAQ() {
           items: [
             {
               question: "Are the wellness events safe for everyone?",
-              answer: "Yes. Activities are monitored by volunteers; high-risk actions are not included."
+              answer: "Yes, activities are monitored by volunteers; high-risk actions are not included."
             },
             {
               question: "Can I take photos inside wellness zones?",
@@ -453,12 +449,8 @@ export default function FAQ() {
           title: "4. Deliverables & Prizes",
           items: [
             {
-              question: "Are there prizes for wellness activities?",
-              answer: "Only specific events (e.g., Treasure Hunt) include prizes. Others focus on wellbeing and experience."
-            },
-            {
               question: "Do participants receive certificates?",
-              answer: "Not usually—only certain workshops may provide participation acknowledgements."
+              answer: "Not usually only certain workshops may provide participation acknowledgements."
             }
           ]
         },
@@ -467,7 +459,7 @@ export default function FAQ() {
           items: [
             {
               question: "Can someone be banned from wellness zones?",
-              answer: "Yes, for: Misbehavior, Damaging materials, Violating queue discipline, Disrupting silent zones."
+              answer: "Yes, for: misbehavior, damaging materials, violating queue discipline, disrupting silent zones."
             }
           ]
         }

@@ -31,28 +31,21 @@ const images = [
   { src: "/photos/IMG_7847.JPG", span: "md:col-span-1 md:row-span-1" },
   { src: "/photos/IMG_9283.jpg", span: "md:col-span-1 md:row-span-1" },
   // Converted RAW
-  { src: "/photos/DSC01412.jpg", span: "md:col-span-3 md:row-span-2" },
+  { src: "/photos/DSC01412.jpg", span: "md:col-span-3 md:row-span-3" },
 ];
 
 function MarqueeRow({ photos, duration, direction }: { photos: string[]; duration: number; direction: 'normal' | 'reverse' }) {
-  const [paused, setPaused] = React.useState(false);
-
   // Duplicate the photos so the animation can loop seamlessly
   const combined = React.useMemo(() => [...photos, ...photos], [photos]);
 
   const style: React.CSSProperties = {
     animation: `marquee ${duration}s linear infinite`,
-    animationPlayState: paused ? 'paused' : 'running',
     animationDirection: direction,
     willChange: 'transform',
   };
 
   return (
-    <div
-      className="overflow-hidden rounded-xl py-2"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-    >
+    <div className="overflow-hidden rounded-xl py-2">
       <div className="marquee-track" style={style} aria-hidden={false}>
         {combined.map((src, i) => (
           <div className="marquee-item h-40 w-64" key={i}>

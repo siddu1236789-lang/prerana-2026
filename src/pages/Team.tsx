@@ -79,7 +79,7 @@ const domainTeams = [
     name: "Hospitality",
     roles: [
       { title: "Head", members: [{ name: "A. Jagadeesh", image: "/images/team/jagadeesh.jpg" }, { name: "Prakruthi V", image: "/images/team/prakruthi.jpg" }] },
-      { title: "Lead", members: [{ name: "Prithvi Ganesh" }] },
+      { title: "Lead", members: [{ name: "Prithvi Ganesh", image: "/images/team/Prithvi.jpg" }] },
       { title: "Co-Lead", members: [{ name: "Sri Nandini T", image: "/images/team/nandini.jpg" }, { name: "Vakul Kumar Bayya", image: "/images/team/vakul.jpg" }] },
     ]
   },

@@ -49,7 +49,7 @@ export default function Hero() {
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
           aria-label="Hero Background Video"
         />
         {/* Subtle Overlay for text readability */}
@@ -88,9 +88,9 @@ export default function Hero() {
                 { label: "Minutes", value: timeLeft.minutes },
                 { label: "Seconds", value: timeLeft.seconds },
               ].map((item) => (
-                <div key={item.label} className="bg-card/50 backdrop-blur-md border border-yellow/10 p-3 rounded-xl">
-                  <div className="text-xl font-bold text-white mb-1 font-mono">{item.value.toString().padStart(2, '0')}</div>
-                  <div className="text-[10px] text-white/60 uppercase tracking-wider">{item.label}</div>
+                <div key={item.label} className="bg-card/50 backdrop-blur-md border border-yellow-400 p-3 rounded-xl">
+                  <div className="text-3xl font-bold text-white mb-1 font-mono">{item.value.toString().padStart(2, '0')}</div>
+                  <div className="text-sm text-white/60 uppercase tracking-wider">{item.label}</div>
                 </div>
               ))}
             </div>
@@ -98,6 +98,7 @@ export default function Hero() {
               <div className="flex items-center gap-2 bg-muted/30 px-4 py-2 rounded-full backdrop-blur-md border border-white/10">
                 <Calendar className="w-5 h-5 text-primary" />
                 <a
+                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Prerana%202026&dates=20260122T000000Z/20260123T235900Z&details=Annual%20Techno-Cultural%20and%20Wellness%20Fest%20of%20GITAM%20University&location=GITAM%20University,%20Bengaluru"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
