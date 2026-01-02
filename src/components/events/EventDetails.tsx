@@ -100,21 +100,12 @@ export default function EventDetails({ event: selectedEvent, category }: EventDe
               {selectedEvent.registrationFee === "0" ? "Free" : selectedEvent.registrationFee}
             </div>
             <div className="flex gap-3">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="text-lg px-8 shadow-lg shadow-primary/20"
                 onClick={handleRegister}
               >
                 Register Now
-              </Button>
-
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-6"
-                onClick={openBrochure}
-              >
-                View Event Brochure
               </Button>
             </div>
           </div>
