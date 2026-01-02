@@ -36,7 +36,7 @@ export default function Mascot() {
           <div className="grid md:grid-cols-3 gap-6 text-left mt-12">
             <div className="p-6 rounded-xl bg-card/50 border border-primary/10 backdrop-blur-sm">
               <h3 className="text-xl font-bold text-primary mb-2">Ingenuity</h3>
-              <p className="text-muted-foreground">Showcasing pioneering technologies and creative solutions that propel us toward a transformative future.</p>
+              <p className="text-muted-foreground">Showcasing pioneering technologies and creative solutions that propel us towards a transformative future.</p>
             </div>
             <div className="p-6 rounded-xl bg-card/50 border border-primary/10 backdrop-blur-sm">
               <h3 className="text-xl font-bold text-primary mb-2">Enthusiasm</h3>
@@ -44,7 +44,7 @@ export default function Mascot() {
             </div>
             <div className="p-6 rounded-xl bg-card/50 border border-primary/10 backdrop-blur-sm">
               <h3 className="text-xl font-bold text-primary mb-2">Synergy</h3>
-              <p className="text-muted-foreground">Weaving together diverse talents and cultures into a seamless, harmonious celebration of collective excellence.</p>
+              <p className="text-muted-foreground">Weaving together diverse talents and cultures into a seamless and harmonious celebration of collective excellence.</p>
             </div>
           </div>
         </motion.div>

@@ -43,7 +43,7 @@ export default function EventCategories() {
           Explore the diverse range of events happening at Prerana 2026.
         </p>
         <div className="mt-6">
-          <a href="/events broucher .pdf" download="Event Brochure.pdf" className="inline-block">
+          <a href="/Event Brochure.pdf" download="Event Brochure.pdf" className="inline-block">
             <button className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-black rounded-md shadow-sm hover:bg-primary/90 transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M21 12v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6" />

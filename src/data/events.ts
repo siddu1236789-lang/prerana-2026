@@ -36,7 +36,7 @@ export const events: Event[] = [
     teamSize: "1–4 members",
     eligibility: "Open to all departments",
     registrationFee: "Free (Per Team)",
-    prizes: ["Prize: ₹10,000"],
+    prizes: ["Prize Pool: ₹10,000"],
     guidelines: [
       "Open to all departments.",
       "Prototypes and concept models are allowed. ",
@@ -69,7 +69,7 @@ export const events: Event[] = [
     category: "Technical",
     shortDescription: "Intelligence in Motion.",
     fullDescription: "An exciting competition where autonomous robots navigate complex mazes using sensor data, real-time decision making, and optimized pathfinding algorithms.",
-    location: " KOJO (Venture Development Centre)  ",
+    location: " KOJO Hall (Venture Development Centre)  ",
     teamSize: "1–3 members",
     eligibility: "Autonomous robots only",
     registrationFee: "₹149 (Per Team)",
@@ -140,7 +140,7 @@ export const events: Event[] = [
     teamSize: "1–3 members",
     eligibility: "Open to all",
     registrationFee: "₹449 (Per Team)",
-    prizes: ["Prize Pool: ₹6,000", "Additional Awards: Best Game Award, Best Creativity Award, Audience Choice Award"],
+    prizes: ["Prize Pool: ₹6,000"],
     guidelines: [
       "Theme will be revealed during the event",
       "Any game engine may be used",
@@ -448,7 +448,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Single performer only",
     registrationFee: "₹149 (799 combo with Drama)",
-    prizes: ["1st Prize: ₹2,500"],
+    prizes: ["Prize Pool: ₹2,500"],
     guidelines: [
       "Solo stage performance",
       "Vulgar content prohibited",
@@ -472,7 +472,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
-    prizes: ["1st Prize: ₹2,500"],
+    prizes: ["Prize Pool: ₹2,500"],
     guidelines: [
       "No reading from paper or phone",
       "Original narration only",
@@ -520,7 +520,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199 (349 combo withShort Film)",
-    prizes: ["1st Prize: ₹1,500"],
+    prizes: ["Prize Pool: ₹1,500"],
     guidelines: [
       "Original content only",
       "Plagiarism leads to disqualification",
@@ -543,7 +543,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
-    prizes: ["1st Prize: ₹1,500"],
+    prizes: ["Prize Pool: ₹1,500"],
     guidelines: [
       "Individual participation only",
       "Sketch must be hand-drawn",
@@ -594,7 +594,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
-    prizes: ["1st Prize: ₹1,500"],
+    prizes: ["Prize Pool: ₹1,500"],
     guidelines: [
       "Individual participation",
       "Topic will be given on the spot",
@@ -622,7 +622,7 @@ export const events: Event[] = [
     teamSize: "1",
     eligibility: "Open to all",
     registrationFee: "₹199",
-    prizes: ["1st Prize: ₹1,500"],
+    prizes: ["Prize Pool: ₹1,500"],
     guidelines: [
       "Individual participation",
       "Poster must be digitally designed",
@@ -798,7 +798,7 @@ export const events: Event[] = [
     teamSize: "Individual",
     eligibility: "Open to all",
     registrationFee: "Free (Registration Required)",
-    prizes: ["Wellness Score Card"],
+    prizes: [],
     guidelines: ["Follow volunteer instructions", "Maintain queue discipline"],
     judgingCriteria: [],
     disqualificationRules: [],
@@ -819,7 +819,7 @@ export const events: Event[] = [
     teamSize: "Individual",
     eligibility: "Open to all",
     registrationFee: "Free",
-    prizes: ["Wellness-themed badges/stickers"],
+    prizes: [],
     guidelines: ["Safety first", "Follow activity rules"],
     judgingCriteria: [],
     disqualificationRules: [],

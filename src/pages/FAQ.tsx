@@ -20,7 +20,7 @@ export default function FAQ() {
           items: [
             {
               question: "How do I register for a specific event?",
-              answer: "All registrations regarding the competitions, workshops, and star-night passes are handled through an events register page. Select your events within the form and complete payment through GITAM Pay/G-Events."
+              answer: "All registrations regarding the competitions, workshops, and star-night passes are handled through an events register page. Select your event within the form and complete payment through GITAM Pay/G-Events."
             },
             {
               question: "Can students from outside GITAM participate?",
@@ -28,7 +28,7 @@ export default function FAQ() {
             },
             {
               question: "What is the deadline for registration?",
-              answer: "Registrations remain open only during the official window: . Late entries will not be accepted under any circumstances."
+              answer: "Registrations will remain open only during the official window: . Late entries will not be accepted under any circumstances."
             },
             {
               question: "How do I confirm if my payment was successful?",
