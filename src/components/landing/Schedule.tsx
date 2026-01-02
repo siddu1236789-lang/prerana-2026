@@ -11,9 +11,9 @@ import { events } from "@/data/events";
 
 const staticSchedule = {
   day1: [
-    { time: "09:00 AM – 09:45 AM", event: "Torch Relay", category: "Ceremony", location: "Underpass to Shivaji Bhavan" },
-    { time: "09:45 AM – 10:00 AM", event: "Inauguration & SPICMACAY Performance", category: "Cultural", location: "SB Auditorium" },
-    { time: "10:00 AM – 10:30 AM", event: "Chenda Mela Performance", category: "Cultural", location: "In front of SB" },
+    { time: "09:00 AM – 09:30 AM", event: "March of Hope", category: "Ceremony", location: "Underpass to Shivaji Bhavan" },
+    { time: "09:30 AM – 10:00 AM", event: "Chenda mela", category: "Ceremony", location: "SB Auditorium" },
+    { time: "10:00 AM – 10:30 AM", event: "Inauguration", category: "Ceremony", location: "In front of SB" },
     { time: "10:30 AM – 04:00 PM", event: "Wellness Zone Activities", category: "Wellness", location: "Gitam Lawn (Opposite to Vinaysadan)" },
     { time: "11:00 AM – 04:00 PM", event: "Project Expo", category: "Technical", location: "VDC (Innovation Street)" },
     { time: "10:30 AM – 01:30 PM", event: "Gamethon — Theme Reveal & Start", category: "Technical", location: "VB 501" },
@@ -29,7 +29,7 @@ const staticSchedule = {
     { time: "06:30 PM – 08:30 PM", event: "Band Performance", category: "Cultural", location: "Main Stage" },
   ],
   day2: [
-    { time: "09:30 AM – 10:00 AM", event: "Rise of Hope (Balloon Release) & Prerana Logo Formation", category: "Ceremony", location: "Track" },
+    { time: "09:30 AM – 10:00 AM", event: "Prerana Unity Ascent", category: "Wellness", location: "Track" },
     { time: "09:00 AM – 05:00 PM", event: "Hackathon — 8 Hour Sprint", category: "Technical", location: "VDC (Alpha, Beta & Gamma)" },
     { time: "10:00 AM – 04:00 PM", event: "Wellness Zones", category: "Wellness", location: "Opposite to Vinaysadan Lawn" },
     { time: "10:00 AM – 10:50 AM", event: "Solo Dance (Indian)", category: "Cultural", location: "Auditorium" },

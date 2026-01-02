@@ -49,7 +49,7 @@ export default function Hero() {
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           aria-label="Hero Background Video"
         />
         {/* Subtle Overlay for text readability */}

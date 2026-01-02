@@ -216,4 +216,10 @@
   .hide-scrollbar::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
+
+  /* Gallery marquee styles */
+  .marquee-track { display:flex; gap:1rem; align-items:center; }
+  @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-25%); } }
+  .marquee-item { flex:0 0 auto; border-radius:0.5rem; overflow:hidden }
+  .marquee-item img { display:block }
 }

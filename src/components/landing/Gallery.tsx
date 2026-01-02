@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 const images = [
   // Row 1: Large 2x2 block + two 1x1 blocks
@@ -21,35 +20,46 @@ const images = [
   { src: "https://harmless-tapir-303.convex.cloud/api/storage/be4df044-590b-4e98-888c-bd3070f6ab28", span: "md:col-span-1 md:row-span-1" },
 
   // Appended: local uploaded photos (RAW omitted)
-  { src: "/photos/IMG_9091.jpg", span: "md:col-span-1 md:row-span-1" },
-  { src: "/photos/IMG_8609.jpg", span: "md:col-span-1 md:row-span-2" },
-  { src: "/photos/IMG_8627.jpg", span: "md:col-span-1 md:row-span-1" },
-  { src: "/photos/DSC02186.jpg", span: "md:col-span-1 md:row-span-1" },
-  { src: "/photos/DSC02472.jpg", span: "md:col-span-1 md:row-span-1" },
-  { src: "/photos/DSC_6645.jpg", span: "md:col-span-1 md:row-span-1" },
-  { src: "/photos/IMG_7835.JPG", span: "md:col-span-1 md:row-span-1" },
-  { src: "/photos/IMG_7847.JPG", span: "md:col-span-1 md:row-span-1" },
-  { src: "/photos/IMG_9283.jpg", span: "md:col-span-1 md:row-span-1" },
+  { src: "/photos/IMG_9091.webp", span: "md:col-span-1 md:row-span-1" },
+  { src: "/photos/IMG_8609.webp", span: "md:col-span-1 md:row-span-2" },
+  { src: "/photos/IMG_8627.webp", span: "md:col-span-1 md:row-span-1" },
+  { src: "/photos/DSC02186.webp", span: "md:col-span-1 md:row-span-1" },
+  { src: "/photos/DSC02472.webp", span: "md:col-span-1 md:row-span-1" },
+  { src: "/photos/DSC_6645.webp", span: "md:col-span-1 md:row-span-1" },
+  { src: "/photos/IMG_7835.webp", span: "md:col-span-1 md:row-span-1" },
+  { src: "/photos/IMG_7847.webp", span: "md:col-span-1 md:row-span-1" },
+  { src: "/photos/IMG_9283.webp", span: "md:col-span-1 md:row-span-1" },
   // Converted RAW
-  { src: "/photos/DSC01412.jpg", span: "md:col-span-3 md:row-span-3" },
+  { src: "/photos/DSC01412.webp", span: "md:col-span-1 md:row-span-1" },
 ];
 
 function MarqueeRow({ photos, duration, direction }: { photos: string[]; duration: number; direction: 'normal' | 'reverse' }) {
+  const [paused, setPaused] = React.useState(false);
+
   // Duplicate the photos so the animation can loop seamlessly
-  const combined = React.useMemo(() => [...photos, ...photos], [photos]);
+  const combined = React.useMemo(() => [...photos, ...photos, ...photos, ...photos], [photos]);
 
   const style: React.CSSProperties = {
     animation: `marquee ${duration}s linear infinite`,
     animationDirection: direction,
+    animationPlayState: paused ? 'paused' : 'running',
     willChange: 'transform',
   };
 
   return (
-    <div className="overflow-hidden rounded-xl py-2">
+    <div
+      className="overflow-hidden rounded-xl py-2"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
       <div className="marquee-track" style={style} aria-hidden={false}>
         {combined.map((src, i) => (
           <div className="marquee-item h-40 w-64" key={i}>
-            <img src={src} alt={`Gallery image ${i + 1}`} className="h-full w-full object-cover" />
+            <img
+              src={src}
+              alt={`Gallery image ${i + 1}`}
+              className="h-full w-full object-cover"
+            />
           </div>
         ))}
       </div>
@@ -68,13 +78,6 @@ export default function Gallery() {
 
         {/* 3-row horizontal marquee */}
         <div className="max-w-6xl mx-auto space-y-6">
-          <style>{`
-            .marquee-track { display:flex; gap:1rem; align-items:center; }
-            @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-            .marquee-item { flex:0 0 auto; border-radius:0.5rem; overflow:hidden }
-            .marquee-item img { display:block }
-          `}</style>
-
           {/** Create 3 rows with distinct photo sets (round-robin distribution). */}
           {(() => {
             const all = images.map((i) => i.src).filter((s) => !s.toLowerCase().endsWith('.arw'));

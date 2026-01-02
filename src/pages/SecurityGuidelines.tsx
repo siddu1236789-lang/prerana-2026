@@ -1,10 +1,29 @@
 import Footer from "@/components/landing/Footer";
 import Navbar from "@/components/landing/Navbar";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, AlertTriangle, CheckCircle, Ban, IdCard, Backpack, Users, Megaphone } from "lucide-react";
+import { Shield, AlertTriangle, CheckCircle, Ban, IdCard, Backpack, Users, Megaphone, Download } from "lucide-react";
 import { motion } from "framer-motion";
+import { useCallback } from "react";
 
 export default function SecurityGuidelines() {
+  const handleDownload = useCallback(async () => {
+    try {
+      const response = await fetch('/Prerana\u201926 Security Entry Guidelines.pdf');
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Prerana\u201926 Security Entry Guidelines.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Download failed', error);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/30 flex flex-col">
       <Navbar />
@@ -22,6 +41,10 @@ export default function SecurityGuidelines() {
             <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto">
               To ensure a safe and enjoyable experience for everyone at Prerana 2026, please strictly adhere to the following security policies.
             </p>
+            <Button onClick={handleDownload} className="mt-6 text-lg px-8 py-3">
+              <Download className="mr-2 h-5 w-5" />
+              Download Security Guidelines
+            </Button>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">

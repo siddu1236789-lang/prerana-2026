@@ -6,103 +6,103 @@ import { motion } from "framer-motion";
 
 // Data Definitions
 const leadership = [
-  { name: "M. Thousheer", role: "President", image: "/images/team/thoushier.jpg" },
-  { name: "Honalu K.G", role: "Vice President", image: "/images/team/honalu.jpg" },
-  { name: "Mokshagna", role: "Vice President", image: "/images/team/moksha.jpg" },
+  { name: "M. Thousheer", role: "President", image: "/images/team/thoushier.webp" },
+  { name: "Honalu K.G", role: "Vice President", image: "/images/team/honalu.webp" },
+  { name: "Mokshagna", role: "Vice President", image: "/images/team/moksha.webp" },
 ];
 
 const domainTeams = [
   {
     name: "Security",
     roles: [
-      { title: "Head", members: [{ name: "M.V. Sai Teja", image: "/images/team/sai.jpg" }] },
-      { title: "Lead", members: [{ name: "Jaswanth Koduri", image: "/images/team/jashwanth.jpg" }, { name: "Spoorthi S", image: "/images/team/spoorthi.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "K.B. Dhanush Tej", image: "/images/team/dhanush.jpg" }, { name: "Rupesh Koneti", image: "/images/team/roopesh.jpg" }] },
+      { title: "Head", members: [{ name: "M.V. Sai Teja", image: "/images/team/sai.webp" }] },
+      { title: "Lead", members: [{ name: "Jaswanth Koduri", image: "/images/team/jashwanth.webp" }, { name: "Spoorthi S", image: "/images/team/spoorthi.webp" }] },
+      { title: "Co-Lead", members: [{ name: "K.B. Dhanush Tej", image: "/images/team/dhanush.webp" }, { name: "Rupesh Koneti", image: "/images/team/roopesh.webp" }] },
     ]
   },
   {
     name: "Media",
     roles: [
-      { title: "Lead", members: [{ name: "G. Sai Krishna", image: "/images/team/sai krishna.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "S MD Aasim", image: "/images/team/bade miyya.jpg" }] },
+      { title: "Lead", members: [{ name: "G. Sai Krishna", image: "/images/team/sai krishna.webp" }] },
+      { title: "Co-Lead", members: [{ name: "S MD Aasim", image: "/images/team/bade miyya.webp" }] },
     ]
   },
   {
     name: "Design & Content",
     roles: [
-      { title: "Head", members: [{ name: "Venkata Vishnu", image: "/images/team/vishnu.jpg" }] },
-      { title: "Lead", members: [{ name: "Dhanunjay", image: "/images/team/leo.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "Sohitha", image: "/images/team/sohitha.jpg" }, { name: "Guru Sai", image: "/images/team/guru sai.jpg" }] },
+      { title: "Head", members: [{ name: "Venkata Vishnu", image: "/images/team/vishnu.webp" }] },
+      { title: "Lead", members: [{ name: "Dhanunjay", image: "/images/team/leo.webp" }] },
+      { title: "Co-Lead", members: [{ name: "Sohitha", image: "/images/team/sohitha.webp" }, { name: "Guru Sai", image: "/images/team/guru sai.webp" }] },
     ]
   },
   {
     name: "Technology",
     roles: [
-      { title: "Head", members: [{ name: "D.N.C Teja", image: "/images/team/teja.jpg" }] },
-      { title: "Lead", members: [{ name: "Vasavi Gorantala", image: "/images/team/vasavi.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "S MD Aasim", image: "/images/team/aasim.jpg" }, { name: "Kandala Pavan", image: "/images/team/pavan.jpg" }] },
+      { title: "Head", members: [{ name: "D.N.C Teja", image: "/images/team/teja.webp" }] },
+      { title: "Lead", members: [{ name: "Vasavi Gorantala", image: "/images/team/vasavi.webp" }] },
+      { title: "Co-Lead", members: [{ name: "S MD Aasim", image: "/images/team/aasim.webp" }, { name: "Kandala Pavan", image: "/images/team/pavan.webp" }] },
     ]
   },
   {
     name: "Events",
     roles: [
-      { title: "Head", members: [{ name: "B. Neha Reddy", image: "/images/team/neha.jpg" }] },
-      { title: "Lead", members: [{ name: "Rachel Smita", image: "/images/team/rachel.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "Lanka Darshini Raj", image: "/images/team/darshani.jpg" }, { name: "P. Yathin Bharadwaj", image: "/images/team/yathin.jpg" }] },
+      { title: "Head", members: [{ name: "B. Neha Reddy", image: "/images/team/neha.webp" }] },
+      { title: "Lead", members: [{ name: "Rachel Smita", image: "/images/team/rachel.webp" }] },
+      { title: "Co-Lead", members: [{ name: "Lanka Darshini Raj", image: "/images/team/darshani.webp" }, { name: "P. Yathin Bharadwaj", image: "/images/team/yathin.webp" }] },
     ]
   },
   {
     name: "Marketing",
     roles: [
-      { title: "Head", members: [{ name: "Apurva Mishra", image: "/images/team/apurva.jpg" }] },
-      { title: "Lead", members: [{ name: "Manoj Kumar", image: "/images/team/manoj.jpeg" }] },
-      { title: "Co-Lead", members: [{ name: "J. Riteesh Reddy", image: "/images/team/Riteesh.jpg" }] },
+      { title: "Head", members: [{ name: "Apurva Mishra", image: "/images/team/apurva.webp" }] },
+      { title: "Lead", members: [{ name: "Manoj Kumar", image: "/images/team/manoj.webp" }] },
+      { title: "Co-Lead", members: [{ name: "J. Riteesh Reddy", image: "/images/team/Riteesh.webp" }] },
     ]
   },
   {
     name: "Operations",
     roles: [
-      { title: "Head", members: [{ name: "S Ruthish Reddy", image: "/images/team/rutheeish.jpg" }] },
-      { title: "Lead", members: [{ name: "P. Joel Michael Son", image: "/images/team/Michael.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "Allata Harshita", image: "/images/team/harshitha.jpg" }] },
+      { title: "Head", members: [{ name: "S Ruthish Reddy", image: "/images/team/rutheeish.webp" }] },
+      { title: "Lead", members: [{ name: "P. Joel Michael Son", image: "/images/team/Michael.webp" }] },
+      { title: "Co-Lead", members: [{ name: "Allata Harshita", image: "/images/team/harshitha.webp" }] },
     ]
   },
   {
     name: "Sponsorship",
     roles: [
-      { title: "Head", members: [{ name: "K. Sriniwas", image: "/images/team/sriniwas.jpg" }] },
-      { title: "Lead", members: [{ name: "Sumanth Reddy S", image: "/images/team/sumanth.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "Srishti Sucklecha", image: "/images/team/srishti.jpg" }] },
+      { title: "Head", members: [{ name: "K. Sriniwas", image: "/images/team/sriniwas.webp" }] },
+      { title: "Lead", members: [{ name: "Sumanth Reddy S", image: "/images/team/sumanth.webp" }] },
+      { title: "Co-Lead", members: [{ name: "Srishti Sucklecha", image: "/images/team/srishti.webp" }] },
     ]
   },
   {
     name: "Hospitality",
     roles: [
-      { title: "Head", members: [{ name: "A. Jagadeesh", image: "/images/team/jagadeesh.jpg" }, { name: "Prakruthi V", image: "/images/team/prakruthi.jpg" }] },
-      { title: "Lead", members: [{ name: "Prithvi Ganesh", image: "/images/team/Prithvi.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "Sri Nandini T", image: "/images/team/nandini.jpg" }, { name: "Vakul Kumar Bayya", image: "/images/team/vakul.jpg" }] },
+      { title: "Head", members: [{ name: "A. Jagadeesh", image: "/images/team/jagadeesh.webp" }, { name: "Prakruthi V", image: "/images/team/prakruthi.webp" }] },
+      { title: "Lead", members: [{ name: "Prithvi Ganesh", image: "/images/team/Prithvi.webp" }] },
+      { title: "Co-Lead", members: [{ name: "Sri Nandini T", image: "/images/team/nandini.webp" }, { name: "Vakul Kumar Bayya", image: "/images/team/vakul.webp" }] },
     ]
   },
   {
     name: "Legal & Documentation",
     roles: [
-      { title: "Head", members: [{ name: "Sophiya Sharma", image: "/images/team/sofiya.jpg" }] },
-      { title: "Lead", members: [{ name: "Hrishita Rauniyar", image: "/images/team/hrishita.jpg" }] },
-      { title: "Co-Lead", members: [{ name: "Unnati Chari", image: "/images/team/unnati.jpg" }] },
+      { title: "Head", members: [{ name: "Sophiya Sharma", image: "/images/team/sofiya.webp" }] },
+      { title: "Lead", members: [{ name: "Hrishita Rauniyar", image: "/images/team/hrishita.webp" }] },
+      { title: "Co-Lead", members: [{ name: "Unnati Chari", image: "/images/team/unnati.webp" }] },
     ]
   },
 ];
 
 const advisoryCommittee = [
-  { name: "Dr. Reema Chaudhury", role: "mentor", image: "/images/team/reema.jpg" },
-  { name: "Dr. Asha Acharya", role: "Co-mentor", image: "/images/team/asha mam.jpg", subrole: "" },
-  { name: "Anitha D", role: "Senior Executive", image: "/images/team/anita mam.jpg" },
-  { name: "Arjun Raghu", role: "Senior Executive", image: "/images/team/arjun sir.jpg" },
-  { name: "Pranav Amarnath", role: "Senior Executive ", image: "/images/team/pranav sir.jpeg" },
-  { name: "Meghana Musku", role: "Senior Executive ", image: "/images/team/meghana mam.png" },
-  { name: "Srikanth Basavraj", role: "Senior Executive", image: "/images/team/srikanth sir.jpg" },
-  { name: "Rayanka Debnath", role: "Senior Executive", image: "/images/team/rayanka mam.jpg" },
-  { name: "Ayush BM", role: "Executive - Visual Content", image: "/images/team/ayush-sir.jpg" },
+  { name: "Dr. Reema Chaudhury", role: "mentor", image: "/images/team/reema.webp" },
+  { name: "Dr. Asha Acharya", role: "Co-mentor", image: "/images/team/asha mam.webp"},
+  { name: "Anitha D", role: "Senior Executive", image: "/images/team/anita mam.webp" },
+  { name: "Arjun Raghu", role: "Senior Executive", image: "/images/team/arjun sir.webp" },
+  { name: "Pranav Amarnath", role: "Senior Executive ", image: "/images/team/pranav sir.webp" },
+  { name: "Meghana Musku", role: "Senior Executive ", image: "/images/team/meghana mam.webp" },
+  { name: "Srikanth Basavraj", role: "Senior Executive", image: "/images/team/srikanth sir.webp" },
+  { name: "Rayanka Debnath", role: "Senior Executive", image: "/images/team/rayanka mam.webp" },
+  { name: "Ayush BM", role: "Executive - Visual Content", image: "/images/team/ayush-sir.webp" },
 ];
 
 function getInitials(name: string) {
