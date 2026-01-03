@@ -23,7 +23,7 @@ export const categories = [
   },
   {
     title: "Wellness",
-    description: "Wellness Experiences thoughtfully  curated to support physical, mental and emotional well-being.",
+    description: "Wellness Experiences thoughtfully curated to support emotional well-being.",
     icon: Heart,
     color: "text-green-400",
     bg: "bg-green-400/10",
@@ -75,8 +75,8 @@ export default function EventCategories() {
               >
                 <Card className="h-full border-border/50 hover:border-primary/50 transition-colors">
                   <CardHeader className="flex flex-row items-center gap-4">
-                    <div className={`${cat.slug === 'wellness' ? 'w-20 h-20' : 'w-16 h-16'} rounded-2xl ${cat.bg} flex items-center justify-center`}>
-                      <cat.icon className={`${cat.slug === 'wellness' ? 'w-12 h-12' : 'w-8 h-8'} ${cat.color}`} />
+                    <div className={`${cat.slug === 'wellness' ? 'w-18 h-16' : 'w-16 h-16'} rounded-2xl ${cat.bg} flex items-center justify-center`}>
+                      <cat.icon className={`${cat.slug === 'wellness' ? 'w-10 h-10' : 'w-8 h-8'} ${cat.color}`} />
                     </div>
                     <div>
                       <CardTitle className="text-2xl">{cat.title}</CardTitle>
