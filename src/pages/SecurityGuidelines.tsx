@@ -63,7 +63,7 @@ export default function SecurityGuidelines() {
                 <div className="mt-4 space-y-2">
                   <p className="text-destructive flex items-start gap-2">
                     <Ban className="h-4 w-4 mt-1 shrink-0" />
-                    No alternative IDs (photocopies, screenshots, temporary slips) will be accepted.
+                    No alternative IDs (photocopies, screenshots, temporary slips) will be not accepted.
                   </p>
                 </div>
               </CardContent>
