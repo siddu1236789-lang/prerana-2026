@@ -20,7 +20,7 @@ export default function Contact() {
               Connect with Prerana Team
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto">
-              We're here to assist you. Use the contact details below for all event-related inquiries.
+              We are here to assist you. Use the contact details below for all event-related inquiries.
             </p>
           </div>
 
