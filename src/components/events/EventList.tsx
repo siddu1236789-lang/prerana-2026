@@ -38,11 +38,6 @@ export default function EventList({ category, events }: EventListProps) {
         </Button>
       </div>
 
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4 capitalize">{category} Events</h1>
-        <p className="text-muted-foreground">Click an event to expand details in an accordion; on wider screens details appear on the right.</p>
-      </div>
-
       {/* Combo Events (click to expand) */}
       {comboEvents.length > 0 && (
         <div className="mb-12">
