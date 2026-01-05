@@ -38,7 +38,6 @@ export default function EventList({ category, events }: EventListProps) {
         </Button>
       </div>
 
-      {/* Combo Events (click to expand) */}
       {comboEvents.length > 0 && (
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-6">
