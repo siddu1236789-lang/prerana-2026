@@ -3,10 +3,8 @@ import Navbar from "@/components/landing/Navbar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Code, Music, Heart, Ticket } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 
 export default function Register() {
-  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans">
@@ -40,10 +38,10 @@ export default function Register() {
                   </p>
                 </CardContent>
                 <CardFooter className="flex flex-col gap-3">
-                  <Button 
+                  <Button
                     size="lg"
-                    className="w-full gap-2 text-lg" 
-                    onClick={() => navigate("/register/general")}
+                    className="w-full gap-2 text-lg"
+                    onClick={() => window.location.href = "https://gevents.gitam.edu/registration/Njg3NA.. "}
                   >
                     Get Fest Pass <ArrowRight className="w-5 h-5" />
                   </Button>
